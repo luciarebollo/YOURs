@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62,5%;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+body{
+    background-image: url("../multimedia/lightpaperfibers.png");
+    background-repeat: repeat;
+    color: #172f50
+}
+ul{
+    list-style-type:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    font-weight: 500;
+}
+
+.body-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.3fr 0.2fr;
+    grid-template-areas:
+    "card card card"
+    "productos productos productos"
+    "suscripcion suscripcion suscripcion"
+    "footer footer footer";
+}
+/* .headerImg{
+    grid-area: logo;
+}
+.header{
+    grid-area: header;
+} */
+.card{
+    grid-area: card;
+}
+.productos{
+    grid-area: productos;
+}
+.suscripcion{
+    grid-area: suscripcion;
+}
+.footer-container{
+    grid-area: footer;
+}
+
+
+/* MENU */
+
+/* header {
+    background-color: #F7EEE8;
+    position: fixed;
+    top:0;
+    width: 100%;
+ } */
+
+/* .grid-header{
+    background-color: #F7EEE8;
+    top:0;
+    width: 100%;
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ;
+} */
+/* .header-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    grid-template-areas:
+    "logo navegador compra"
+} */
+
+.headerImg {
+    width: 190px;
+    height: 70px;
+    background-color: #F7EEE8;
+    align-items: start;
+}
+.header{
+    background-color: #F7EEE8;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.navegacion {
+    background-color: #F7EEE8;
+    width: 100%;
+    margin:0px;
+    padding: 20px;
+}
+
+.navegacion ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: #F7EEE8;
+
+}
+
+.submenu li{
+    display: block;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+.menu ul li a:hover{
+    text-decoration: underline;
+    color:#E5533A
+}
+.ruta{
+    margin: 10px 10px 10px 30px;
+    padding: 50px;
+}
+
+/* INDEX */
+
+.card{
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 200;
+    margin: 30px 0px 30px;
+    padding: 20px;
+    border:7px double #172f50;
+}
+
+.imgCarruzel{
+    width: 250px;
+    height: 400px;
+}
+
+.textoTendencias{
+    margin:20px;
+    padding: 30px;
+}
+/* .productosTendencias{
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+} */
+
+.productos{
+    background-image: url("../multimedia/fondogingko.png");
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+/* .productos div{
+    border: 2px solid #386B6E;
+} */
+.cardImag{
+    width:200px;
+    height: 200px;
+}
+.pañueloA{
+    /* background-image: url("../multimedia/PañueloA.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 200px;
+    height: 200px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pañueloA img{
+    width: 200px;
+    height: 200px;
+    transition: width (2s), height (2s);
+}
+.pañueloA img:hover{
+    width: 300px; height: 300px;
+    /* transform: scale(1.5); */
+}
+.pañueloB{
+    /* background-image: url("../multimedia/PañueloB.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pañueloB img{
+    width: 200px;
+    height: 200px;
+    transition: width (2s), height (2s);
+}
+.pañueloB img:hover{
+    width: 300px; height: 300px;
+}
+.pañueloC{
+    /* background-image: url("../multimedia/PañueloC.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.pañueloC img{
+    width: 200px;
+    height: 200px;
+    transition: width (2s), height (2s);
+}
+.pañueloC img:hover{
+    width: 300px; height: 300px;
+}
+.suscripcion{
+    margin: 10px;
+    padding: 10px;
+}
+
+.formularioSuscripcion{
+    margin: 50px;
+    padding: 50px;
+}
+
+/* NOSOTROS */
+
+.nosotros{
+    padding: 10px 50px;
+}
+
+.nosotrosParrafo{
+    padding: 10px 100px;
+}
+
+.moodboard{
+    width: 100%;
+}
+
+/* ESTILOS */
+
+.productos-container{
+    display: grid;
+    grid-template-columns: repeat (3, 250px);
+    grid-template-rows: repeat (3, 250px);
+    grid-template-areas:
+    "pa pb pc"
+
+}
+.cardProductoA{
+    grid-area: pa;
+}
+.cardProductoB{
+    grid-area: pb;
+}
+.cardProductoC{
+    grid-area: pc;
+}
+
+.productos-container {
+    display: flex;
+    padding: 50px 100px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items:center;
+
+}
+.cardProductoA {
+    width: 250px;
+    height: 300px;
+    border: 2px solid #386B6E;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.imgProductoA {
+    width:200px;
+    height: 200px;
+}
+
+/* .cardProductoA{
+    margin: 10px 50px 10px 50px;
+} */
+
+.cardProductoB {
+    width: 250px;
+    height: 300px;
+    border: 2px solid #386B6E;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.imgProductoB {
+    width:200px;
+    height: 200px;
+}
+.cardProductoC {
+    width: 250px;
+    height: 300px;
+    border: 2px solid #386B6E;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.imgProductoC {
+    width:200px;
+    height: 200px;
+}
+
+/* PROBADOR */
+
+.cuerpoProbador {
+    margin: 150px 90px 20px;
+    padding: 50px;
+}
+
+/* NEWS */
+
+
+.flex-container {
+    display: flex;
+    padding: 20px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+}
+
+.noticia1 {
+    /* width: 250px;
+    height: 300px; */
+    border: 2px solid #E5533A;
+    background-color: #93BCC0;
+    /* line-height: 120px;
+    text-align:center;
+    margin: 5px;*/
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.noticia1 img{
+    width: 250px;
+    height: 300px;
+    transition: width (2s), height (2s);
+}
+.noticia1 img:hover{
+    width: 270px; height: 320px;
+}
+.noticia2 {
+    /* width: 250px;
+    height: 300px; */
+    border: 2px solid #E5533A;
+    background-color: #93BCC0;
+    /* line-height: 120px;
+    text-align:center;
+    margin: 5px;*/
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.noticia2 img{
+    width: 250px;
+    height: 300px;
+    transition: width (2s), height (2s);
+}
+.noticia2 img:hover{
+    width: 270px; height: 320px;
+}
+.noticia3 {
+    /* width: 250px;
+    height: 300px; */
+    border: 2px solid #E5533A;
+    background-color: #93BCC0;
+    /* line-height: 120px;
+    text-align:center;
+    margin: 5px;*/
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.noticia3 img{
+    width: 250px;
+    height: 300px;
+    transition: width (2s), height (2s);
+}
+.noticia3 img:hover{
+    width: 270px; height: 320px;
+}
+/* GINGKO FLORANTE */
+
+.gingkoSubir{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    z-index: 900;
+}
+
+/* FOOTER */
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 0.3fr 0.3fr;
+    grid-template-areas:
+    "tiendaonline laempresa"
+}
+.tiendaOnline{
+    grid-area: tiendaonline;
+}
+.laEmpresa{
+    grid-area: laempresa;
+}
+
+.footer-container {
+    margin: 20px 0px;
+    padding: 30px 50px;
+    background-color: #172f50;
+    color: #93BCC0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+/*section{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+}*/
+
+.tiendaOnline {
+    display: block;
+    font-size: 15px;
+    padding: 0px 50px;
+    color: #93BCC0
+}
+
+.laEmpresa {
+    display: block;
+    font-size: 15px;
+    padding: 0px 50px;
+    color: #93BCC0
+}
+
+@media screen and (max-width: 480px){
+.body-container{
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 0.5fr 0.5fr 0.5fr; */
+    grid-template-areas:
+    "card"
+    "productos"
+    "suscripcion"
+    "footer";
+}
+/* .headerImg{
+    grid-area: logo;
+} */
+/* .header{
+    grid-area: header;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+} */
+.card{
+    grid-area: card;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.productos{
+    grid-area: productos;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 800px;
+}
+.suscripcion{
+    grid-area: suscripcion;
+}
+.footer-container{
+    grid-area: footer;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+}
+
+@media screen and (max-width: 1200px){
+    .body-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "card card"
+        "productos productos"
+        " suscripcion suscripcion"
+        "footer footer";
+    }
+    /* .headerImg{
+        grid-area: logo;
+    }
+    .header{
+        grid-area: header;
+    } */
+    .card{
+        grid-area: card;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .productos{
+        grid-area: productos;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 800px;
+    }
+    .suscripcion{
+        grid-area: suscripcion;
+    }
+    .footer-container{
+        grid-area: footer;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    }

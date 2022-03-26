@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 02 - Primeros pasos con HTML</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- LISTAS -->
+
+    <h3>Listas Ordenadas (EJ. pasos de una receta)</h3>
+    <ol type="a">
+        <!-- ordered list -->
+        <li>Ponemos harina en un bowl</li> <!-- list item -->
+        <li>Luego le agregamos un huevo</li>
+        <li>Por ultimo le agregas una taza de agua</li>
+    </ol>
+
+
+    <h3>Listas NO Ordenadas (EJ. Lista super)</h3>
+    <ul>
+        <!-- unorderer list -->
+        <li>Manzana</li>
+        <ul>
+            <li>Roja</li>
+            <li>Verde</li>
+        </ul>
+        <li>Banana</li>
+        <li>Peras</li>
+    </ul>
+
+    <!-- ul>li*5 + TAB -->
+
+
+    <h3>Lista de definicion (Concepto - Definicion)</h3>
+    <dl>
+        <dt>Brujula</dt>
+        <dd>Instrumento consistente en una caja en cuyo interior una aguja imantada gira sobre un eje y señala el norte
+            magnético, que sirve para determinar las direcciones de la superficie terrestre.</dd>
+    </dl>
+
+
+    <hr>
+
+
+    <!-- TABLAS -->
+
+    <h3 id="tabla">Tablas</h3>
+
+    <table border="5"  cellpadding="20px"  cellspacing="25px">
+        <th>Alumno</th> <!-- table head "encabezado" -->
+        <th>Curso</th>
+        <th>Turno</th>
+
+        <tr> <!-- table row - filas -->
+            <td>Federico</td> <!-- table data - informacion/columna -->
+            <td>DW</td>
+            <td>Mañana</td>
+        </tr>
+
+        <tr>
+            <td>Lucia</td>
+            <td>JS</td>
+            <td>Tarde</td>
+        </tr>
+
+        <tr>
+            <td>MAriano</td>
+            <td>DW</td>
+        </tr>
+
+        <tr>
+            <td>Juan</td>
+            <td>DW</td>
+            <td>Noche</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- FORMULARIOS -->
+
+    <h3>Formularios</h3>
+
+    <form>
+        <!-- Nombre de persona -->
+        <label for="nombre">Ingrese su nombre:</label>
+        <input type="text" placeholder="Ingrese su nombre" value="nombre" name="nombre">
+
+
+
+        <br>
+        <!-- Correo -->
+        <input type="email" name="" id="" placeholder="Ingrese su correo" value="email">
+        <br>
+        <!-- Contraseña -->
+        <input type="password" name="" id="" placeholder="Ingrese su contraseña" value="contraseña">
+        <br>
+        <!-- Dejar mensaje -->
+        <textarea name="" id="" cols="30" rows="10" placeholder="Deje un mensaje aqui"></textarea>
+
+        <br>
+
+        <!-- RADIO -- Elegir solo UNA opcion -->
+        <label for="genero">Indique su genero</label>
+
+        <input type="radio" name="genero" value="mujer">Femenino
+        <input type="radio" name="genero" value="hombre"> Masculino
+        <input type="radio" name="genero" value="no especifica"> Prefiero no especificar
+
+        <br>
+
+        <!-- CHECKBOX -- Varias opciones -->
+        <input type="checkbox" name="" id="" value="1"> Acepta los terminos... 
+        <input type="checkbox" name="" id="" value="2"> Acepta que le enviemos mails... 
+        <input type="checkbox" name="" id="" value="3"> Acepta que mostremos sus fotos... 
+
+        <br>
+
+        <!-- Desplegable  -->
+        <label for="pais">Pais:</label>
+        <select name="pais" id="">
+            <option value="arg">Argentina</option>
+            <option value="chi">Chile</option>
+            <option value="uru">Uruguay</option>
+        </select>
+
+        <fieldset>
+            <legend>Talle de pantalon</legend>
+            <input type="text" placeholder="Color de pantalon">
+            <select name="" id="">
+                <option value="l">L</option>
+                <option value="m">M</option>
+                <option value="s">S</option>
+            </select>
+        </fieldset>
+
+
+        <!-- BOTONES -->
+
+        <!-- Boton enviar -->
+        <input type="submit" value="Enviar formulario">
+        
+        <!-- Boton resetear -->
+        <input type="reset" value="Resetear formulario">
+
+        <!-- Boton que no hace nada, pero sirve para javascript -->
+        <input type="button" value="No sirvo ahora">
+        
+    </form>
+
+
+    <hr>
+
+    <!-- ENLACES -->
+
+    <!-- ENLACES RELATIVOS --> <!-- PAgina o archivo del mismo proyecto -->
+    <a href="paginas/contacto.html"> Pagina contacto </a>
+
+    <!-- <a href="contacto.html"></a> -->
+
+    <!-- ENLACES ABSOLUTOS --> <!-- A documentos o sitios fuera del proyecto -->
+    <a href="https://wwww.google.com.ar"> Link a google </a>
+
+
+    <!-- ENLACES INTERNOS --> <!-- a una parte del documento, se accede a traves del id -->
+    <a href="#tabla">Subi hasta la tabla </a>
+
+    <hr>
+
+    <!-- IMAGENES -->
+
+    <h3>IMAGENES</h3>
+    <img src="multimedia/logo.PNG" alt="Logo de mi empresa" title="Logo de mi empresa"> <!-- src = source, de donde saco la imagen -->
+                        <!-- alt = texto alternativo. Conciso y breve. Descripcion de la imagen -->
+
+    <hr>
+
+    <!-- IFRAME --> <!-- Elementos traidos de otro sitio (youtube, google maps, spotify) -->
+    <h3>Youtube</h3>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MEDPRzf45t0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h3>Google maps</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.066850016401!2d-58.3815704!3d-34.6037389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1645579666563!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <h3>Spotify</h3>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6uy1evHad8xphD4ss031lv?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+
+</body>
+
+</html>

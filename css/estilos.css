@@ -11,6 +11,7 @@ html{
 
 body{
     background-image: url("../multimedia/lightpaperfibers.png");
+    font-family: 'Advent Pro', sans-serif;
     background-repeat: repeat;
     color: #172f50
 }
@@ -84,7 +85,7 @@ ul{
 } */
 
 .headerImg {
-    width: 190px;
+    width: 200px;
     height: 70px;
     background-color: #F7EEE8;
     align-items: start;
@@ -92,6 +93,8 @@ ul{
 .header{
     background-color: #F7EEE8;
     z-index: 1000;
+    position: sticky;
+    top: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -168,21 +171,38 @@ ul{
 } */
 
 .productos{
+    background-size: cover;
     background-image: url("../multimedia/fondogingko.png");
-    width: 100%;
+    width: 100vw;
     height: 400px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
-
+.galeriaProductos{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr, 0.5fr, 0.5fr;
+    grid-template-areas: 
+    "pañueloA pañueloB pañueloC";
+}
 /* .productos div{
     border: 2px solid #386B6E;
 } */
-.cardImag{
+.panuelaA{
+    grid-area: pañueloA;
+}
+.panuelaB{
+    grid-area: pañueloB;
+}
+.panuelaC{
+    grid-area: pañueloC;
+}
+
+/* .cardImag{
     width:200px;
     height: 200px;
-}
+} */
 .pañueloA{
     /* background-image: url("../multimedia/PañueloA.png");
     background-repeat: no-repeat;
@@ -195,12 +215,12 @@ ul{
     align-items: center;
 }
 .pañueloA img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height:150px;
     transition: width (2s), height (2s);
 }
 .pañueloA img:hover{
-    width: 300px; height: 300px;
+    width: 200px; height: 200px;
     /* transform: scale(1.5); */
 }
 .pañueloB{
@@ -213,13 +233,14 @@ ul{
     justify-content: center;
     align-items: center;
 }
+
 .pañueloB img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     transition: width (2s), height (2s);
 }
 .pañueloB img:hover{
-    width: 300px; height: 300px;
+    width: 200px; height: 200px;
 }
 .pañueloC{
     /* background-image: url("../multimedia/PañueloC.png");
@@ -230,24 +251,31 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-} 
+}
 .pañueloC img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     transition: width (2s), height (2s);
 }
 .pañueloC img:hover{
-    width: 300px; height: 300px;
+    width: 200px; height: 200px;
 }
 .suscripcion{
-    margin: 10px;
-    padding: 10px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
-
-.formularioSuscripcion{
+.btnPropio{
+    background-color: #386B6E;
+    color:#93BCC0;
+}
+/* .formularioSuscripcion{
     margin: 50px;
     padding: 50px;
-}
+    display: flex;
+    justify-content: center;
+} */
 
 /* NOSOTROS */
 
@@ -444,7 +472,7 @@ ul{
 }
 
 .footer-container {
-    margin: 20px 0px;
+    margin: 0px;
     padding: 30px 50px;
     background-color: #172f50;
     color: #93BCC0;
@@ -464,20 +492,24 @@ ul{
 }*/
 
 .tiendaOnline {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     font-size: 15px;
-    padding: 0px 50px;
+    /* padding: 0px 50px; */
     color: #93BCC0
 }
 
 .laEmpresa {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     font-size: 15px;
-    padding: 0px 50px;
+    /* padding: 0px 50px; */
     color: #93BCC0
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 576px){
 .body-container{
     grid-template-columns: 1fr;
     /* grid-template-rows: 0.5fr 0.5fr 0.5fr; */
@@ -517,13 +549,13 @@ ul{
 }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 768px){
     .body-container{
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
         "card card"
         "productos productos"
-        " suscripcion suscripcion"
+        "suscripcion suscripcion"
         "footer footer";
     }
     /* .headerImg{

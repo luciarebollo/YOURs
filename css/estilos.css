@@ -111,7 +111,6 @@ ul{
     padding: 20px;
 }
 
-
 .navegacion > ul {
     margin: 0px;
     padding: 0px;
@@ -125,6 +124,7 @@ ul{
     font-size: 20px;
     padding: 0px 10px;
 }
+
 .menu li:nth-child(2){
     position: relative;
 }
@@ -153,24 +153,35 @@ ul{
 }
 .ruta{
     margin: 10px 10px 10px 30px;
-    padding: 50px;
+    padding: 20px;
 }
 
 /* INDEX */
 
-.card{
+/* .card{
     font-family: 'Advent Pro', sans-serif;
     font-weight: 200;
     margin: 30px 0px 30px;
     padding: 20px;
     border:7px double #172f50;
-}
+} */
 
-.imgCarruzel{
-    width: 250px;
-    height: 400px;
+.carousel-inner{
+    padding: 20px;
+   
 }
-
+.imgCarousel1{
+    width: 100%;
+    height: 500px;
+}
+.imgCarousel2{
+    width: 100%;
+    height: 500px;
+}
+.imgCarousel3{
+    width: 100%;
+    height: 500px;
+}
 /* .textoTendencias{
     margin:20px;
     padding: 30px;
@@ -298,7 +309,8 @@ ul{
 }
 
 .nosotrosParrafo{
-    padding: 10px 100px;
+    padding: 10px;
+    font-size: 20px;
 }
 
 .moodboard{
@@ -307,7 +319,7 @@ ul{
 
 /* ESTILOS */
 
-.productos-container{
+/* .productos-container{
     display: grid;
     grid-template-columns: repeat (3, 250px);
     grid-template-rows: repeat (3, 250px);
@@ -323,70 +335,120 @@ ul{
 }
 .cardProductoC{
     grid-area: pc;
-}
+} */
 
-.productos-container {
+/* .productos-container {
     display: flex;
     padding: 50px 100px;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items:center;
-
+} */
+.productos-container{
+    display: flex;
+    padding: 0px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 20px;
 }
-.cardProductoA {
+/* .cardProductoA {
     width: 250px;
     height: 300px;
     border: 2px solid #386B6E;
     display: flex;
     flex-flow: column;
     align-items: center;
+} */
+/* .list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #172f50;
+    text-decoration: none;
+    border: 1px solid #93BCC0;
+} */
+.cardA {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 200;
+    position: relative;
+    display:inline-block;
+    padding: 0.5rem 1rem;
+    color: #172f50;
+    text-decoration: none;
+    border: 5px solid #93BCC0;
 }
-
 .imgProductoA {
-    width:200px;
-    height: 200px;
+    width:150px;
+    height: 150px;
+    align-self: center;
 }
 
 /* .cardProductoA{
     margin: 10px 50px 10px 50px;
 } */
 
-.cardProductoB {
+/* .cardProductoB {
     width: 250px;
     height: 300px;
     border: 2px solid #386B6E;
     display: flex;
     flex-flow: column;
     align-items: center;
+} */
+.cardB {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 200;
+    position: relative;
+    display:inline-block;
+    padding: 0.5rem 1rem;
+    color: #172f50;
+    text-decoration: none;
+    border: 5px solid #93BCC0;
 }
 .imgProductoB {
-    width:200px;
-    height: 200px;
+    width:150px;
+    height: 150px;
+    align-items: center;
 }
-.cardProductoC {
+
+/* .cardProductoC {
     width: 250px;
     height: 300px;
     border: 2px solid #386B6E;
     display: flex;
     flex-flow: column;
     align-items: center;
+} */
+.cardC {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 200;
+    position: relative;
+    display:inline-block;
+    padding: 0.5rem 1rem;
+    color: #172f50;
+    text-decoration: none;
+    border: 5px solid #93BCC0;
 }
 .imgProductoC {
-    width:200px;
-    height: 200px;
+    width:150px;
+    height: 150px;
+    align-items: center;
 }
 
 /* PROBADOR */
 
 .cuerpoProbador {
-    margin: 150px 90px 20px;
-    padding: 50px;
+    margin: 5px;
+    padding: 20px;
 }
-
+.preguntasProbador{
+    margin: 20px;
+    padding: 20px;
+}
 /* NEWS */
 
 
-.flex-container {
+.noticias-container{
     display: flex;
     padding: 20px;
     flex-flow: row wrap;
@@ -395,67 +457,87 @@ ul{
     margin: 20px;
 }
 
-.noticia1 {
+/* .noticia1 {
     /* width: 250px;
-    height: 300px; */
+    height: 300px; 
     border: 2px solid #E5533A;
     background-color: #93BCC0;
     /* line-height: 120px;
     text-align:center;
-    margin: 5px;*/
+    margin: 5px;
     display: flex;
     flex-flow: column;
     align-items: center;
-}
+} */
 
-.noticia1 img{
+.noticiaA {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 200;
+    margin: 30px 0px 30px;
+    padding: 20px;
+    border:7px double #172f50;
+}
+.noticiaA zoomA{
     width: 250px;
     height: 300px;
     transition: width (2s), height (2s);
 }
-.noticia1 img:hover{
+.noticiaA zoomA:hover{
     width: 270px; height: 320px;
 }
-.noticia2 {
+/* .noticia2 {
     /* width: 250px;
-    height: 300px; */
+    height: 300px; 
     border: 2px solid #E5533A;
     background-color: #93BCC0;
     /* line-height: 120px;
     text-align:center;
-    margin: 5px;*/
+    margin: 5px;
     display: flex;
     flex-flow: column;
     align-items: center;
+}*/ 
+.noticiaB {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 200;
+    margin: 30px 0px 30px;
+    padding: 20px;
+    border:7px double #172f50;
 }
-
-.noticia2 img{
+.noticiaB zoomB{
     width: 250px;
     height: 300px;
     transition: width (2s), height (2s);
 }
-.noticia2 img:hover{
+.noticiaB zoomB:hover{
     width: 270px; height: 320px;
 }
-.noticia3 {
+/* .noticia3 {
     /* width: 250px;
-    height: 300px; */
+    height: 300px; 
     border: 2px solid #E5533A;
     background-color: #93BCC0;
     /* line-height: 120px;
     text-align:center;
-    margin: 5px;*/
+    margin: 5px;
     display: flex;
     flex-flow: column;
     align-items: center;
-}
+} */
 
-.noticia3 img{
+.noticiaC {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 200;
+    margin: 30px 0px 30px;
+    padding: 20px;
+    border:7px double #172f50;
+}
+.noticiaC zoomC{
     width: 250px;
     height: 300px;
     transition: width (2s), height (2s);
 }
-.noticia3 img:hover{
+.noticiaC zoomC:hover{
     width: 270px; height: 320px;
 }
 /* GINGKO FLORANTE */
@@ -605,7 +687,7 @@ ul{
     width: 100%;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) and (max-width: 576px){
     .cbx-menu{
         display:block;
     }
@@ -651,7 +733,7 @@ ul{
       }
       .cbx-menu label {
         clip-path: inset(80% 0 0 0);
-        background: linear-gradient(to right, #77a1d3, #79cbca, #e684ae);
+        background: linear-gradient(to right, #386B6E, #93BCC0, #E5533A);
         width: 40px;
         height:50px;
         transition-duration: 500ms;
@@ -671,7 +753,7 @@ ul{
       }
       .cbx-menu li:hover {
         background-color: #E5533A;
-        color: white;
+        color: #F7EEE8;
       }
       .cbx-menu li {
         transition-duration: 500ms;

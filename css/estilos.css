@@ -21,6 +21,11 @@ ul{
 
 a{
     text-decoration: none;
+    color: #386B6E;
+}
+
+a:hover {
+    color: #E5533A;
 }
 
 ul{
@@ -37,12 +42,7 @@ ul{
     "suscripcion suscripcion suscripcion"
     "footer footer footer";
 }
-/* .headerImg{
-    grid-area: logo;
-}
-.header{
-    grid-area: header;
-} */
+
 .card{
     grid-area: card;
 }
@@ -151,6 +151,7 @@ ul{
     text-decoration: underline;
     color:#E5533A
 }
+
 .ruta{
     margin: 10px 10px 10px 30px;
     padding: 20px;
@@ -168,7 +169,7 @@ ul{
 
 .carousel-inner{
     padding: 20px;
-   
+
 }
 .img-fluid{
     max-width: 100%;
@@ -214,7 +215,7 @@ ul{
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr, 0.5fr, 0.5fr;
-    grid-template-areas: 
+    grid-template-areas:
     "pañueloA pañueloB pañueloC";
 }
 /* .productos div{
@@ -235,11 +236,11 @@ ul{
     width:200px;
     height: 200px;
 } */
-.btnPropioPanuelo{
+.btnPanuelo{
     background-color: #E5533A;
     color:#F7EEE8;
     height: 40px;
-    border-radius: 2rem;
+    border-radius: 3rem;
 }
 .pañueloA{
     /* background-image: url("../multimedia/PañueloA.png");
@@ -315,6 +316,10 @@ ul{
     justify-content: center;
 } */
 
+.form-check-input:checked {
+    background-color: #E5533A;
+    border-color: #386B6E;
+}
 /* NOSOTROS */
 
 .nosotros{
@@ -380,22 +385,37 @@ ul{
     text-decoration: none;
     border: 1px solid #93BCC0;
 } */
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.2rem 1rem;
+    color: #E5533A;
+    text-decoration: none;
+    background-color: none;
+    border: 2px solid #93BCC0;
+}
 .cardA {
     font-family: 'Advent Pro', sans-serif;
     font-weight: 200;
     position: relative;
     display:inline-block;
-    padding: 0.5rem 1rem;
+    align-items: center;
+    padding: 0.5rem 2rem;
     color: #172f50;
     text-decoration: none;
-    border: 5px solid #93BCC0;
+    /* border: 5px solid #93BCC0; */
 }
 .imgProductoA {
     width:150px;
     height: 150px;
-    align-self: center;
+    /* transition: width (2s), height (2s); */
 }
 
+.imgProductoA img:hover{
+    width: 200px; 
+    height: 200px;
+    /* transform: scale(1.5); */
+}
 /* .cardProductoA{
     margin: 10px 50px 10px 50px;
 } */
@@ -413,10 +433,10 @@ ul{
     font-weight: 200;
     position: relative;
     display:inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     color: #172f50;
     text-decoration: none;
-    border: 5px solid #93BCC0;
+    /* border: 5px solid #93BCC0; */
 }
 .imgProductoB {
     width:150px;
@@ -437,10 +457,10 @@ ul{
     font-weight: 200;
     position: relative;
     display:inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     color: #172f50;
     text-decoration: none;
-    border: 5px solid #93BCC0;
+    /* border: 5px solid #93BCC0; */
 }
 .imgProductoC {
     width:150px;
@@ -458,6 +478,21 @@ ul{
     margin: 20px;
     padding: 20px;
 }
+
+.imgProbador{
+    height: 300px;
+    margin: 10px;
+}
+
+/* .estiloPropioBoton{
+    background-color: #93BCC0;
+    color:#386B6E
+} */
+.accordion-button:not(.collapsed) {
+    color: #386B6E;
+    background-color: #93BCC0;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
 /* NEWS */
 
 
@@ -472,7 +507,7 @@ ul{
 
 /* .noticia1 {
     /* width: 250px;
-    height: 300px; 
+    height: 300px;
     border: 2px solid #E5533A;
     background-color: #93BCC0;
     /* line-height: 120px;
@@ -491,6 +526,7 @@ ul{
     margin: 30px 0px 30px;
     padding: 20px;
     border:7px double #172f50;
+    box-shadow: 2px 2px 5px #999
 }
 .noticiaA zoomA{
     width: 250px;
@@ -502,7 +538,7 @@ ul{
 }
 /* .noticia2 {
     /* width: 250px;
-    height: 300px; 
+    height: 300px;
     border: 2px solid #E5533A;
     background-color: #93BCC0;
     /* line-height: 120px;
@@ -511,13 +547,14 @@ ul{
     display: flex;
     flex-flow: column;
     align-items: center;
-}*/ 
+}*/
 .noticiaB {
     font-family: 'Advent Pro', sans-serif;
     font-weight: 200;
     margin: 30px 0px 30px;
     padding: 20px;
     border:7px double #172f50;
+    box-shadow: 2px 2px 5px #999
 }
 .noticiaB zoomB{
     width: 250px;
@@ -529,7 +566,7 @@ ul{
 }
 /* .noticia3 {
     /* width: 250px;
-    height: 300px; 
+    height: 300px;
     border: 2px solid #E5533A;
     background-color: #93BCC0;
     /* line-height: 120px;
@@ -546,6 +583,7 @@ ul{
     margin: 30px 0px 30px;
     padding: 20px;
     border:7px double #172f50;
+    box-shadow: 2px 2px 5px #999
 }
 .noticiaC zoomC{
     width: 250px;
@@ -564,6 +602,7 @@ ul{
     width: 80px;
     height: 80px;
     z-index: 900;
+    
 }
 
 /* FOOTER */
@@ -608,7 +647,7 @@ ul{
     justify-content: flex-start;
     font-size: 15px;
     /* padding: 0px 50px; */
-    color: #93BCC0
+    color: #F7EEE8
 }
 
 .laEmpresa {
@@ -617,7 +656,7 @@ ul{
     justify-content: flex-start;
     font-size: 15px;
     /* padding: 0px 50px; */
-    color: #93BCC0
+    color: #F7EEE8
 }
 
 @media screen and (max-width: 576px){
@@ -737,7 +776,7 @@ ul{
           height: 100vh;
       }
       .cbx:checked ~ .style-button label:nth-child(1) {
-                transform: rotate3d(0, 1, 1, 
+                transform: rotate3d(0, 1, 1,
       426deg) translate(22px, 6px);
       }
       .cbx:checked ~ .style-button label:nth-child(3) {

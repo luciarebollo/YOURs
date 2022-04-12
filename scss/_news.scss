@@ -1,0 +1,64 @@
+/* NEWS */
+
+.noticias-container{
+    display: flex;
+    padding: 20px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+}
+
+.bordePropio{
+    border:3px double #172f50;
+}
+.noticiaA {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 200;
+    margin: 30px 0px 30px;
+    padding: 20px;
+    border:7px double #172f50;
+    box-shadow: 2px 2px 5px #999
+}
+.noticiaA zoomA{
+    width: 250px;
+    height: 300px;
+    transition: width (2s), height (2s);
+&:hover{
+    width: 270px; height: 320px;
+}
+}
+
+.noticiaB {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 200;
+    margin: 30px 0px 30px;
+    padding: 20px;
+    border:7px double #172f50;
+    box-shadow: 2px 2px 5px #999
+}
+.noticiaB zoomB{
+    width: 250px;
+    height: 300px;
+    transition: width (2s), height (2s);
+&:hover{
+    width: 270px; height: 320px;
+}
+}
+
+.noticiaC {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 200;
+    margin: 30px 0px 30px;
+    padding: 20px;
+    border:7px double #172f50;
+    box-shadow: 2px 2px 5px #999
+}
+.noticiaC zoomC{
+    width: 250px;
+    height: 300px;
+    transition: width (2s), height (2s);
+&:hover{
+    width: 270px; height: 320px;
+}
+}

@@ -1,0 +1,68 @@
+/* ESTILOS */
+
+.productos-container{
+    display: flex;
+    padding: 0px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.2rem 1rem;
+    color: #E5533A;
+    text-decoration: none;
+    background-color: none;
+    border: 2px solid #93BCC0;
+}
+.cardA {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 200;
+    position: relative;
+    display:inline-block;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    color: #172f50;
+    text-decoration: none;
+}
+.imgProductoA {
+    width:150px;
+    height: 150px;
+&:hover{
+    width: 200px; 
+    height: 200px;
+}
+}
+.cardB {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 200;
+    position: relative;
+    display:inline-block;
+    padding: 0.5rem 2rem;
+    color: #172f50;
+    text-decoration: none;
+}
+
+.imgProductoB {
+    width:150px;
+    height: 150px;
+    align-items: center;
+}
+
+.cardC {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 200;
+    position: relative;
+    display:inline-block;
+    padding: 0.5rem 2rem;
+    color: #172f50;
+    text-decoration: none;
+}
+
+.imgProductoC {
+    width:150px;
+    height: 150px;
+    align-items: center;
+}

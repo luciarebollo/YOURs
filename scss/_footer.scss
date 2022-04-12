@@ -1,0 +1,45 @@
+/* FOOTER */
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 0.3fr 0.3fr;
+    grid-template-areas:
+    "tiendaonline laempresa"
+}
+.tiendaOnline{
+    grid-area: tiendaonline;
+}
+.laEmpresa{
+    grid-area: laempresa;
+}
+
+.footer-container {
+    margin: 0px;
+    padding: 30px 50px;
+    background-color: #172f50;
+    color: #93BCC0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+
+.tiendaOnline {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 15px;
+    /* padding: 0px 50px; */
+    color: #F7EEE8
+}
+
+.laEmpresa {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 15px;
+    /* padding: 0px 50px; */
+    color: #F7EEE8
+}

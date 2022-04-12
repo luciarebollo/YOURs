@@ -1,0 +1,21 @@
+/* PROBADOR */
+
+.cuerpoProbador {
+    margin: 5px;
+    padding: 20px;
+}
+.preguntasProbador{
+    margin: 20px;
+    padding: 20px;
+}
+
+.imgProbador{
+    height: 300px;
+    margin: 10px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #386B6E;
+    background-color: #93BCC0;
+    box-shadow: inset 0 -1px 0 grey;
+}

@@ -1,0 +1,109 @@
+/* INDEX */
+
+.carousel-inner{
+    padding: 20px;
+
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.productos{
+    margin: 0px;
+    max-width: 100%;
+    background-size: cover;
+    background-image: url("../multimedia/fondogingko.png");
+    width: 100vw;
+    padding: 30px;
+    height: 390px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.galeriaProductos{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr, 0.5fr, 0.5fr;
+    grid-template-areas:
+    "pañueloA pañueloB pañueloC";
+}
+
+.panuelaA{
+    grid-area: pañueloA;
+}
+.panuelaB{
+    grid-area: pañueloB;
+}
+.panuelaC{
+    grid-area: pañueloC;
+}
+
+.btnPanuelo{
+    background-color: #E5533A;
+    color:#F7EEE8;
+    height: 40px;
+    border-radius: 3rem;
+}
+.pañueloA{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+img{
+    width: 150px;
+    height:150px;
+    transition: width (2s), height (2s);
+
+&:hover{
+    width: 200px; height: 200px;
+}
+}
+}
+.pañueloB{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+img{
+    width: 150px;
+    height: 150px;
+    transition: width (2s), height (2s);
+
+&:hover{
+    width: 200px; height: 200px;
+}
+}
+}
+.pañueloC{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+img{
+    width: 150px;
+    height: 150px;
+    transition: width (2s), height (2s);
+
+&:hover{
+    width: 200px; height: 200px;
+}
+}
+}
+
+.suscripcion{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.btnPropio{
+    background-color: #386B6E;
+    color:#93BCC0;
+}
+
+.form-check-input:checked {
+    background-color: #E5533A;
+    border-color: #386B6E;
+}

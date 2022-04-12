@@ -659,6 +659,8 @@ ul{
     color: #F7EEE8
 }
 
+/* MEDIAQUERIS */
+
 @media screen and (max-width: 576px){
 .body-container{
     grid-template-columns: 1fr;

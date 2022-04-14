@@ -5,14 +5,14 @@
         grid-template-columns: 1fr;
         /* grid-template-rows: 0.5fr 0.5fr 0.5fr; */
         grid-template-areas:
-        "card"
+        "carousel"
         "productos"
         "suscripcion"
         "footer";
     }
 
-    .card{
-        grid-area: card;
+    .carousel-indicators{
+        grid-area: carousel;
         flex-direction: column;
         flex-wrap: wrap;
     }
@@ -36,13 +36,13 @@
         .body-container{
             grid-template-columns: 1fr 1fr;
             grid-template-areas:
-            "card card"
+            "carousel carousel"
             "productos productos"
             "suscripcion suscripcion"
             "footer footer";
         }
-        .card{
-            grid-area: card;
+        .carousel-indicators{
+            grid-area: carousel;
             flex-direction: column;
             flex-wrap: wrap;
         }

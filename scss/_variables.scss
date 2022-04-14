@@ -1,5 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62,5%;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+body{
+    background-image: url("../multimedia/lightpaperfibers.png");
+    font-family: 'Advent Pro', sans-serif;
+    background-repeat: repeat;
+    color: #172f50
+}
+ul{
+    list-style-type:none;
+}
+
+a{
+    text-decoration: none;
+    color: #386B6E;
+}
+
+a:hover {
+    color: #E5533A;
+}
+
+ul{
+    font-weight: 500;
+}
+
+
 $colorTipografia: #172f50;
 $colorHoverTipografia: #E5533A;
 $colorFondoMenu:#F7EEE8;
 
 $letraMenu: 20px;
+
+
+/* MIXINS */
+
+@mixin fontStyle ($color, $fontSize) {
+    color:$color;
+    font-size: $fontSize;
+    font-family: 'Advent Pro', sans-serif; 
+}
+
+.nosotrosParrafo {
+    @include fontStyle(#172f50, 20px);
+}
+.ruta {
+    margin: 10px 10px 10px 30px;
+    padding: 20px;
+    h5{
+    @include fontStyle(#172f50, 50px);
+    }}

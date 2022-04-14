@@ -1,4 +1,46 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62,5%;
+  font-family: 'Advent Pro', sans-serif; }
+
+body {
+  background-image: url("../multimedia/lightpaperfibers.png");
+  font-family: 'Advent Pro', sans-serif;
+  background-repeat: repeat;
+  color: #172f50; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: #386B6E; }
+
+a:hover {
+  color: #E5533A; }
+
+ul {
+  font-weight: 500; }
+
+/* MIXINS */
+.nosotrosParrafo {
+  color: #172f50;
+  font-size: 20px;
+  font-family: 'Advent Pro', sans-serif; }
+
+.ruta {
+  margin: 10px 10px 10px 30px;
+  padding: 20px; }
+  .ruta h5 {
+    color: #172f50;
+    font-size: 50px;
+    font-family: 'Advent Pro', sans-serif; }
+
 /* MENU */
 .header-container {
   width: fit-content;
@@ -29,22 +71,20 @@
 .navegacion > ul {
   margin: 0px;
   padding: 0px;
-  width: calc(100% - 300px);
+  width: calc(100% - 400px);
   display: inline-block;
   text-align: center; }
-
-.menu li {
-  display: inline-block;
-  font-size: 20px;
-  padding: 0px 10px; }
-  .menu li li:nth-child(2) {
+  .navegacion > ul li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0px 10px; }
+  .navegacion > ul li:nth-child(2) {
     position: relative; }
-  .menu li:hover ul {
+  .navegacion > ul:hover ul {
     display: block; }
-
-.menu ul li a:hover {
-  text-decoration: underline;
-  color: #E5533A; }
+    .navegacion > ul:hover ul:hover {
+      text-decoration: underline;
+      color: #E5533A; }
 
 .submenu {
   display: none;
@@ -57,6 +97,35 @@
     display: block;
     text-decoration: none;
     margin: 5px; }
+
+.carritoLogin {
+  display: inline-block;
+  align-items: center;
+  justify-content: center; }
+
+.carritoLogin ul li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  text-align: center; }
+
+.carritoLogin ul li a {
+  display: block;
+  padding: 0 10px;
+  background-color: #386B6E;
+  color: #F7EEE8;
+  line-height: 35px;
+  font-size: 18px;
+  transition: .2s;
+  border-radius: 5rem; }
+
+.carritoLogin ul:hover a {
+  filter: blur(2px); }
+
+.carritoLogin ul li a:hover {
+  transform: translateY(-3px) scale(1.05);
+  filter: none; }
 
 /* INDEX */
 .carousel-inner {
@@ -351,14 +420,43 @@
   /* padding: 0px 50px; */
   color: #F7EEE8; }
 
+.redesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.redesContainer ul li {
+  display: inline-block;
+  margin: 0 5px;
+  width: 35px;
+  height: 35px;
+  text-align: center; }
+
+.redesContainer ul li a {
+  display: block;
+  padding: 0 10px;
+  background-color: #386B6E;
+  color: #F7EEE8;
+  line-height: 35px;
+  font-size: 18px;
+  transition: .2s;
+  border-radius: 3rem; }
+
+.redesContainer ul:hover a {
+  filter: blur(2px); }
+
+.redesContainer ul li a:hover {
+  transform: translateY(-3px) scale(1.05);
+  filter: none; }
+
 /* MEDIAQUERIS */
 @media screen and (max-width: 576px) {
   .body-container {
     grid-template-columns: 1fr;
     /* grid-template-rows: 0.5fr 0.5fr 0.5fr; */
-    grid-template-areas: "card" "productos" "suscripcion" "footer"; }
-  .card {
-    grid-area: card;
+    grid-template-areas: "carousel" "productos" "suscripcion" "footer"; }
+  .carousel-indicators {
+    grid-area: carousel;
     flex-direction: column;
     flex-wrap: wrap; }
   .productos {
@@ -376,9 +474,9 @@
 @media screen and (max-width: 768px) {
   .body-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "card card" "productos productos" "suscripcion suscripcion" "footer footer"; }
-  .card {
-    grid-area: card;
+    grid-template-areas: "carousel carousel" "productos productos" "suscripcion suscripcion" "footer footer"; }
+  .carousel-indicators {
+    grid-area: carousel;
     flex-direction: column;
     flex-wrap: wrap; }
   .productos {

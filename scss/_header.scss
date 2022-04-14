@@ -1,19 +1,17 @@
 /* MENU */
-
-.header-container {
+.header-container{
     width: fit-content;
     display: inline;
 }
 
-.headerImg {
+.headerImg{
     width: 200px;
     height: 70px;
-    background-color: $colorFondoMenu;
+    background-color: #F7EEE8;
     align-items: start;
 }
-
-.header {
-    background-color: $colorFondoMenu;
+.header{
+    background-color: #F7EEE8;
     z-index: 1000;
     position: sticky;
     top: 0px;
@@ -21,53 +19,88 @@
     flex-direction: row;
     justify-content: space-around;
 }
-
-.navegacion {
-    background-color: $colorFondoMenu;
+.navegacion{
+    background-color: #F7EEE8;
     display: inline;
     width: fit-content;
-    margin: 0px;
+    margin:0px;
     padding: 20px;
 }
 
-.navegacion>ul {
+.navegacion > ul {
     margin: 0px;
     padding: 0px;
-    width: calc(100% - 300px);
+    width: calc(100% - 400px);
     display: inline-block;
     text-align: center;
-}
 
-.menu li {
+li{
     display: inline-block;
-    font-size: $letraMenu;
+    font-size: 20px;
     padding: 0px 10px;
-
-    li:nth-child(2) {
-        position: relative;
-    }
-
-    &:hover ul {
-        display: block;
-    }
 }
 
-.menu ul li a:hover {
+li:nth-child(2){
+    position: relative;
+}
+
+&:hover ul{
+    display: block;
+
+
+&:hover{
     text-decoration: underline;
-    color: $colorHoverTipografia;
+    color:#E5533A
 }
-
-.submenu {
+}
+}
+.submenu{
     display: none;
     position: absolute;
-    background-color: $colorFondoMenu;
+    background-color: #F7EEE8;
     padding: 0px;
     right: -15px;
     width: 100px;
 
-    li {
-        display: block;
-        text-decoration: none;
-        margin: 5px;
-    }
+li{
+    display: block;
+    text-decoration: none;
+    margin: 5px;
 }
+}
+
+
+.carritoLogin{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.carritoLogin ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.carritoLogin ul li a{
+    display:block;
+    padding: 0 10px;
+    background-color: #386B6E;
+    color: #F7EEE8;
+    line-height: 35px;
+    font-size: 18px;
+    transition: .2s;
+    border-radius: 5rem;
+}
+
+.carritoLogin ul:hover a {
+    filter: blur(2px);
+}
+
+.carritoLogin ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    filter: none;
+}
+

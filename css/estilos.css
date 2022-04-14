@@ -157,6 +157,39 @@ ul{
     padding: 20px;
 }
 
+.carritoLogin{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.carritoLogin ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.carritoLogin ul li a{
+    display:block;
+    padding: 0 10px;
+    background-color: #386B6E;
+    color: #F7EEE8;
+    line-height: 35px;
+    font-size: 18px;
+    transition: .2s;
+    border-radius: 5rem;
+}
+
+.carritoLogin ul:hover a {
+    filter: blur(2px);
+}
+
+.carritoLogin ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    filter: none;
+}
 /* INDEX */
 
 /* .card{
@@ -632,6 +665,7 @@ ul{
     align-items: flex-start;
 }
 
+
 /*section{
     margin: 10px;
     padding: 10px;
@@ -657,6 +691,41 @@ ul{
     font-size: 15px;
     /* padding: 0px 50px; */
     color: #F7EEE8
+}
+
+.redesContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redesContainer ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.redesContainer ul li a{
+    display:block;
+    padding: 0 10px;
+    background: #386B6E;
+    color: #F7EEE8;
+    line-height: 20px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px grey;
+    transition: .2s;
+    border-radius: 3rem;
+}
+
+.redesContainer ul:hover a {
+    filter: blur(2px);
+}
+
+.redesContainer ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    filter: none;
 }
 
 /* MEDIAQUERIS */

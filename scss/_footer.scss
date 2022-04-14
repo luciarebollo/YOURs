@@ -43,3 +43,37 @@
     /* padding: 0px 50px; */
     color: #F7EEE8
 }
+
+.redesContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redesContainer ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+.redesContainer ul li a{
+    display:block;
+    padding: 0 10px;
+    background-color: #386B6E;
+    color: #F7EEE8;
+    line-height: 35px;
+    font-size: 18px;
+    transition: .2s;
+    border-radius: 3rem;
+}
+
+.redesContainer ul:hover a {
+    filter: blur(2px);
+}
+
+.redesContainer ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    filter: none;
+}

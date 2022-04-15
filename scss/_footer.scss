@@ -1,79 +1,66 @@
 /* FOOTER */
 
-.footer-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 0.3fr 0.3fr;
-    grid-template-areas:
-    "tiendaonline laempresa"
-}
-.tiendaOnline{
-    grid-area: tiendaonline;
-}
-.laEmpresa{
-    grid-area: laempresa;
-}
-
 .footer-container {
-    margin: 0px;
-    padding: 30px 50px;
-    background-color: #172f50;
-    color: #93BCC0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:flex-start;
-    align-items: flex-start;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.3fr 0.3fr;
+	grid-template-areas: "tiendaonline laempresa";
+	margin: 0px;
+	padding: 30px 50px;
+	background-color: #172f50;
+	color: #93BCC0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
-
-
 .tiendaOnline {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-size: 15px;
-    /* padding: 0px 50px; */
-    color: #F7EEE8
+	grid-area: tiendaonline;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	font-size: 15px;
+	color: #F7EEE8;
 }
-
 .laEmpresa {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-size: 15px;
-    /* padding: 0px 50px; */
-    color: #F7EEE8
+	grid-area: laempresa;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	font-size: 15px;
+	color: #F7EEE8;
 }
-
-.redesContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.redesContainer ul li {
-    display: inline-block;
-    margin: 0 5px;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-}
-
-.redesContainer ul li a{
-    display:block;
-    padding: 0 10px;
-    background-color: #386B6E;
-    color: #F7EEE8;
-    line-height: 35px;
-    font-size: 18px;
-    transition: .2s;
-    border-radius: 3rem;
-}
-
-.redesContainer ul:hover a {
-    filter: blur(2px);
-}
-
-.redesContainer ul li a:hover{
-    transform: translateY(-3px) scale(1.05);
-    filter: none;
+.redesContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 25px;
+	ul {
+		li {
+			display: inline-block;
+			margin: 0 5px;
+			width: 35px;
+			height: 35px;
+			text-align: center;
+			a {
+				display: block;
+				padding: 0 10px;
+				background-color: #386B6E;
+				color: #F7EEE8;
+				line-height: 35px;
+				font-size: 18px;
+				transition: .2s;
+				border-radius: 3rem;
+				&:hover {
+					transform: translateY(-3px) scale(1.05);
+					filter: none;
+				}
+			}
+		}
+		&:hover {
+			a {
+				filter: blur(2px);
+			}
+		}
+	}
 }

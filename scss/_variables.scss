@@ -39,6 +39,11 @@ $colorFondoMenu:#F7EEE8;
 
 $letraMenu: 20px;
 
+/* MAPS */
+
+
+
+
 
 /* MIXINS */
 
@@ -54,6 +59,19 @@ $letraMenu: 20px;
 .ruta {
     margin: 10px 10px 10px 30px;
     padding: 20px;
-    h5{
-    @include fontStyle(#172f50, 50px);
+    .h5{
+    @include fontStyle(#172f50, 23px);
     }}
+
+
+    /* EXTEND --> Tutora: agregue un "extend prueba" porque no encontre a que aplicarlo en mi proyexto.*/
+
+.clasePrueba{
+    text-align: center;
+    color:#E5533A;
+    border: 2px;
+}
+.clasePrueba2{
+    @extend .clasePrueba;
+    font-size: 3rem;
+}

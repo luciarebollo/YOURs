@@ -1,148 +1,146 @@
 /* MEDIAQUERIS */
 
-@media screen and (max-width: 576px){
-    .body-container{
-        grid-template-columns: 1fr;
-        /* grid-template-rows: 0.5fr 0.5fr 0.5fr; */
-        grid-template-areas:
-        "carousel"
-        "productos"
-        "suscripcion"
-        "footer";
-    }
-
-    .carousel-indicators{
-        grid-area: carousel;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .productos{
-        grid-area: productos;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 800px;
-    }
-    .suscripcion{
-        grid-area: suscripcion;
-    }
-    .footer-container{
-        grid-area: footer;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    }
-    
-    @media screen and (max-width: 768px){
-        .body-container{
-            grid-template-columns: 1fr 1fr;
-            grid-template-areas:
-            "carousel carousel"
-            "productos productos"
-            "suscripcion suscripcion"
-            "footer footer";
-        }
-        .carousel-indicators{
-            grid-area: carousel;
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-        .productos{
-            grid-area: productos;
-            flex-direction: column;
-            flex-wrap: wrap;
-            height: 800px;
-        }
-        .suscripcion{
-            grid-area: suscripcion;
-        }
-        .footer-container{
-            grid-area: footer;
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-        }
-    
-    .cbx-menu{
-        display: none;
-        background-color:#F7EEE8;
-        width: 100%;
-    }
-    
-    @media (max-width: 768px) and (max-width: 576px){
-        .cbx-menu{
-            display:block;
-        }
-        header{
-            display: none;
-        }
-        .cbx-menu .hamburguer-button {
-            display: flex;
-            position: relative;
-          }
-          .cbx-menu .style-button {
-            display: flex;
-            flex-direction: column;
-            width: 50px;
-            height: 50px;
-            position: absolute;
-            left:9px;
-            top: -5px;
-            z-index: -1;
-          }
-          .cbx-menu .cbx {
-            width: 50px;
-            height: 50px;
-            cursor: pointer;
-          }
-          .cbx-menu .cbx:checked + nav {
-              transform: translate(-5vw, 0px);
-          }
-          nav {
-              transition-duration: 500ms;
-              transform: translate(-110vw, 0px);
-              height: 100vh;
-          }
-          .cbx:checked ~ .style-button label:nth-child(1) {
-                    transform: rotate3d(0, 1, 1,
-          426deg) translate(22px, 6px);
-          }
-          .cbx:checked ~ .style-button label:nth-child(3) {
-            transform: rotate3d(0, 1, 1, 292deg) translate(10px, -12px);
-          }
-          .cbx:checked ~ .style-button label:nth-child(2) {
-            opacity: 0;
-          }
-          .cbx-menu label {
-            clip-path: inset(80% 0 0 0);
-            background: linear-gradient(to right, #386B6E, #93BCC0, #E5533A);
-            width: 40px;
-            height:50px;
-            transition-duration: 500ms;
-          }
-          input[type="checkbox"] {
-            opacity: 0;
-          }
-          .cbx-menu{
-            position: fixed;
-            top: 0;
-            z-index: 2;
-          }
-          .cbx-menu nav {
-            position: absolute;
-            background-color: #F7EEE8;
-            z-index: -14;
-          }
-          .cbx-menu li:hover {
-            background-color: #E5533A;
-            color: #F7EEE8;
-          }
-          .cbx-menu li {
-            transition-duration: 500ms;
-            padding-bottom: 30px;
-            text-align: center;
-            font-size: 30px;
-            width: 50vw;
-            list-style: none;
-            cursor:pointer;
-          }
-    }
+@media screen and (max-width: 576px) {
+	.body-container {
+		grid-template-columns: 1fr;
+		grid-template-areas: "carousel" "productos" "suscripcion" "footer";
+	}
+	.carousel-indicators {
+		grid-area: carousel;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.productos {
+		grid-area: productos;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: 800px;
+	}
+	.suscripcion {
+		grid-area: suscripcion;
+	}
+	.footer-container {
+		grid-area: footer;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+}
+@media screen and (max-width: 768px) {
+	.body-container {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "carousel carousel" "productos productos" "suscripcion suscripcion" "footer footer";
+	}
+	.carousel-indicators {
+		grid-area: carousel;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.productos {
+		grid-area: productos;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: fit-content;
+	}
+	.suscripcion {
+		grid-area: suscripcion;
+	}
+	.footer-container {
+		grid-area: footer;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+}
+.cbx-menu {
+	display: none;
+	background-color: #F7EEE8;
+	width: 100%;
+}
+@media (max-width: 768px) and (max-width: 576px) {
+	.cbx-menu {
+		display: block;
+		position: fixed;
+		top: 0;
+		z-index: 2;
+		.hamburguer-button {
+			display: flex;
+			position: relative;
+		}
+		.style-button {
+			display: flex;
+			flex-direction: column;
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			left: 9px;
+			top: -5px;
+			z-index: -1;
+		}
+		.cbx {
+			width: 50px;
+			height: 50px;
+			cursor: pointer;
+			&:checked {
+				+ {
+					nav {
+						transform: translate(-5vw, 0px);
+					}
+				}
+			}
+		}
+		label {
+			clip-path: inset(80% 0 0 0);
+			background: linear-gradient(to right, #386B6E, #93BCC0, #E5533A);
+			width: 40px;
+			height: 50px;
+			transition-duration: 500ms;
+		}
+		nav {
+			position: absolute;
+			background-color: #F7EEE8;
+			z-index: -14;
+		}
+		li {
+			&:hover {
+				background-color: #E5533A;
+				color: #F7EEE8;
+			}
+			transition-duration: 500ms;
+			padding-bottom: 30px;
+			text-align: center;
+			font-size: 30px;
+			width: 50vw;
+			list-style: none;
+			cursor: pointer;
+		}
+	}
+	header {
+		display: none;
+	}
+	nav {
+		transition-duration: 500ms;
+		transform: translate(-110vw, 0px);
+		height: 100vh;
+	}
+	.cbx {
+		&:checked {
+			~ {
+				.style-button {
+					label {
+						&:nth-child(1) {
+							transform: rotate3d(0, 1, 1, 426deg) translate(22px, 6px);
+						}
+						&:nth-child(3) {
+							transform: rotate3d(0, 1, 1, 292deg) translate(10px, -12px);
+						}
+						&:nth-child(2) {
+							opacity: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	input[type="checkbox"] {
+		opacity: 0;
+	}
+}

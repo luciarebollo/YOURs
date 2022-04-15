@@ -1,16 +1,17 @@
 /* MENU */
-.header-container{
+.header-container {
     width: fit-content;
     display: inline;
 }
 
-.headerImg{
+.headerImg {
     width: 200px;
     height: 70px;
     background-color: #F7EEE8;
     align-items: start;
 }
-.header{
+
+.header {
     background-color: #F7EEE8;
     z-index: 1000;
     position: sticky;
@@ -19,42 +20,53 @@
     flex-direction: row;
     justify-content: space-around;
 }
-.navegacion{
+
+.navegacion {
     background-color: #F7EEE8;
     display: inline;
     width: fit-content;
-    margin:0px;
-    padding: 20px;
-}
-
-.navegacion > ul {
     margin: 0px;
-    padding: 0px;
-    width: calc(100% - 400px);
-    display: inline-block;
-    text-align: center;
+    padding: 20px;
 
-li{
-    display: inline-block;
-    font-size: 20px;
-    padding: 0px 10px;
+    >ul {
+        margin: 0px;
+        padding: 0px;
+        width: calc(100% - 390px);
+        display: inline-block;
+        text-align: center;
+    }
 }
 
-li:nth-child(2){
-    position: relative;
+.menu {
+    li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 0px 10px;
+
+        &:nth-child(2) {
+            position: relative;
+        }
+
+        &:hover {
+            ul {
+                display: block;
+            }
+        }
+    }
+
+    ul {
+        li {
+            a {
+                &:hover {
+                    text-decoration: underline;
+                    color: #E5533A;
+                }
+            }
+        }
+    }
 }
 
-&:hover ul{
-    display: block;
-
-
-&:hover{
-    text-decoration: underline;
-    color:#E5533A
-}
-}
-}
-.submenu{
+.submenu {
     display: none;
     position: absolute;
     background-color: #F7EEE8;
@@ -62,45 +74,44 @@ li:nth-child(2){
     right: -15px;
     width: 100px;
 
-li{
-    display: block;
-    text-decoration: none;
-    margin: 5px;
-}
-}
-
-
-.carritoLogin{
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+    li {
+        display: block;
+        text-decoration: none;
+        margin: 5px;
+    }
 }
 
-.carritoLogin ul li {
-    display: inline-block;
-    margin: 0 5px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-}
-
-.carritoLogin ul li a{
-    display:block;
-    padding: 0 10px;
-    background-color: #386B6E;
-    color: #F7EEE8;
-    line-height: 35px;
-    font-size: 18px;
-    transition: .2s;
-    border-radius: 5rem;
-}
-
-.carritoLogin ul:hover a {
-    filter: blur(2px);
-}
-
-.carritoLogin ul li a:hover{
-    transform: translateY(-3px) scale(1.05);
-    filter: none;
+.carritoLogin {
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+	ul {
+		li {
+			display: inline-block;
+			margin: 0 5px;
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			a {
+				display: block;
+				padding: 0 10px;
+				background-color: #386B6E;
+				color: #F7EEE8;
+				line-height: 35px;
+				font-size: 18px;
+				transition: .2s;
+				border-radius: 5rem;
+				&:hover {
+					transform: translateY(-3px) scale(1.05);
+					filter: none;
+				}
+			}
+		}
+		&:hover {
+			a {
+				filter: blur(2px);
+			}
+		}
+	}
 }
 

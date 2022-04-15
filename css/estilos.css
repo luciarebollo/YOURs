@@ -59,30 +59,6 @@ ul{
 
 /* MENU */
 
-/* header {
-    background-color: #F7EEE8;
-    position: fixed;
-    top:0;
-    width: 100%;
- } */
-
-/* .grid-header{
-    background-color: #F7EEE8;
-    top:0;
-    width: 100%;
-    padding: 20px 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: ;
-} */
-/* .header-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.1fr;
-    grid-template-areas:
-    "logo navegador compra"
-} */
 .header-container{
     width: fit-content;
     display: inline;
@@ -129,6 +105,15 @@ ul{
     position: relative;
 }
 
+.menu li:hover ul{
+    display: block;
+}
+
+.menu ul li a:hover{
+    text-decoration: underline;
+    color:#E5533A
+}
+
 .submenu{
     display: none;
     position: absolute;
@@ -141,15 +126,6 @@ ul{
     display: block;
     text-decoration: none;
     margin: 5px;
-}
-
-.menu li:hover ul{
-    display: block;
-}
-
-.menu ul li a:hover{
-    text-decoration: underline;
-    color:#E5533A
 }
 
 .ruta{
@@ -192,14 +168,6 @@ ul{
 }
 /* INDEX */
 
-/* .card{
-    font-family: 'Advent Pro', sans-serif;
-    font-weight: 200;
-    margin: 30px 0px 30px;
-    padding: 20px;
-    border:7px double #172f50;
-} */
-
 .carousel-inner{
     padding: 20px;
 
@@ -208,28 +176,6 @@ ul{
     max-width: 100%;
     height: auto;
 }
-/* .imgCarousel1{
-    width: 100%;
-    height: 500px;
-}
-.imgCarousel2{
-    width: 100%;
-    height: 500px;
-}
-.imgCarousel3{
-    width: 100%;
-    height: 500px;
-} */
-/* .textoTendencias{
-    margin:20px;
-    padding: 30px;
-} */
-/* .productosTendencias{
-    margin: 20px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-} */
 
 .productos{
     margin: 0px;
@@ -251,9 +197,6 @@ ul{
     grid-template-areas:
     "pañueloA pañueloB pañueloC";
 }
-/* .productos div{
-    border: 2px solid #386B6E;
-} */
 
 .panuelaA{
     grid-area: pañueloA;
@@ -265,10 +208,6 @@ ul{
     grid-area: pañueloC;
 }
 
-/* .cardImag{
-    width:200px;
-    height: 200px;
-} */
 .btnPanuelo{
     background-color: #E5533A;
     color:#F7EEE8;
@@ -276,11 +215,6 @@ ul{
     border-radius: 3rem;
 }
 .pañueloA{
-    /* background-image: url("../multimedia/PañueloA.png");
-    background-repeat: no-repeat;
-    object-fit: cover;
-    width: 200px;
-    height: 200px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -293,13 +227,9 @@ ul{
 }
 .pañueloA img:hover{
     width: 200px; height: 200px;
-    /* transform: scale(1.5); */
+    transform: scale(1.5);
 }
 .pañueloB{
-    /* background-image: url("../multimedia/PañueloB.png");
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -315,10 +245,6 @@ ul{
     width: 200px; height: 200px;
 }
 .pañueloC{
-    /* background-image: url("../multimedia/PañueloC.png");
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -342,12 +268,6 @@ ul{
     background-color: #386B6E;
     color:#93BCC0;
 }
-/* .formularioSuscripcion{
-    margin: 50px;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-} */
 
 .form-check-input:checked {
     background-color: #E5533A;
@@ -370,31 +290,6 @@ ul{
 
 /* ESTILOS */
 
-/* .productos-container{
-    display: grid;
-    grid-template-columns: repeat (3, 250px);
-    grid-template-rows: repeat (3, 250px);
-    grid-template-areas:
-    "pa pb pc"
-
-}
-.cardProductoA{
-    grid-area: pa;
-}
-.cardProductoB{
-    grid-area: pb;
-}
-.cardProductoC{
-    grid-area: pc;
-} */
-
-/* .productos-container {
-    display: flex;
-    padding: 50px 100px;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items:center;
-} */
 .productos-container{
     display: flex;
     padding: 0px;
@@ -402,22 +297,7 @@ ul{
     justify-content: space-evenly;
     margin: 20px;
 }
-/* .cardProductoA {
-    width: 250px;
-    height: 300px;
-    border: 2px solid #386B6E;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-} */
-/* .list-group-item {
-    position: relative;
-    display: block;
-    padding: 0.5rem 1rem;
-    color: #172f50;
-    text-decoration: none;
-    border: 1px solid #93BCC0;
-} */
+
 .list-group-item {
     position: relative;
     display: block;
@@ -449,18 +329,7 @@ ul{
     height: 200px;
     /* transform: scale(1.5); */
 }
-/* .cardProductoA{
-    margin: 10px 50px 10px 50px;
-} */
 
-/* .cardProductoB {
-    width: 250px;
-    height: 300px;
-    border: 2px solid #386B6E;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-} */
 .cardB {
     font-family: 'Advent Pro', sans-serif;
     font-weight: 200;
@@ -477,14 +346,6 @@ ul{
     align-items: center;
 }
 
-/* .cardProductoC {
-    width: 250px;
-    height: 300px;
-    border: 2px solid #386B6E;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-} */
 .cardC {
     font-family: 'Advent Pro', sans-serif;
     font-weight: 200;
@@ -517,17 +378,12 @@ ul{
     margin: 10px;
 }
 
-/* .estiloPropioBoton{
-    background-color: #93BCC0;
-    color:#386B6E
-} */
 .accordion-button:not(.collapsed) {
     color: #386B6E;
     background-color: #93BCC0;
     box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
 }
 /* NEWS */
-
 
 .noticias-container{
     display: flex;
@@ -538,18 +394,6 @@ ul{
     margin: 20px;
 }
 
-/* .noticia1 {
-    /* width: 250px;
-    height: 300px;
-    border: 2px solid #E5533A;
-    background-color: #93BCC0;
-    /* line-height: 120px;
-    text-align:center;
-    margin: 5px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-} */
 .bordePropio{
     border:3px double #172f50;
 }
@@ -569,18 +413,7 @@ ul{
 .noticiaA zoomA:hover{
     width: 270px; height: 320px;
 }
-/* .noticia2 {
-    /* width: 250px;
-    height: 300px;
-    border: 2px solid #E5533A;
-    background-color: #93BCC0;
-    /* line-height: 120px;
-    text-align:center;
-    margin: 5px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}*/
+
 .noticiaB {
     font-family: 'Advent Pro', sans-serif;
     font-weight: 200;
@@ -597,18 +430,6 @@ ul{
 .noticiaB zoomB:hover{
     width: 270px; height: 320px;
 }
-/* .noticia3 {
-    /* width: 250px;
-    height: 300px;
-    border: 2px solid #E5533A;
-    background-color: #93BCC0;
-    /* line-height: 120px;
-    text-align:center;
-    margin: 5px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-} */
 
 .noticiaC {
     font-family: 'Advent Pro', sans-serif;
@@ -665,15 +486,6 @@ ul{
     align-items: flex-start;
 }
 
-
-/*section{
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items:flex-start;
-}*/
 
 .tiendaOnline {
     display: flex;
@@ -740,15 +552,7 @@ ul{
     "suscripcion"
     "footer";
 }
-/* .headerImg{
-    grid-area: logo;
-} */
-/* .header{
-    grid-area: header;
-    flex-direction: column;
-    flex-wrap: wrap;
 
-} */
 .card{
     grid-area: card;
     flex-direction: column;
@@ -779,12 +583,7 @@ ul{
         "suscripcion suscripcion"
         "footer footer";
     }
-    /* .headerImg{
-        grid-area: logo;
-    }
-    .header{
-        grid-area: header;
-    } */
+
     .card{
         grid-area: card;
         flex-direction: column;

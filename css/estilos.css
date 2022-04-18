@@ -219,6 +219,7 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 12px;
 }
 .pañueloA img{
     width: 150px;
@@ -234,6 +235,7 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 12px;
 }
 
 .pañueloB img{
@@ -249,6 +251,7 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 12px;
 }
 .pañueloC img{
     width: 150px;
@@ -311,56 +314,59 @@ ul{
     font-family: 'Advent Pro', sans-serif;
     font-weight: 200;
     position: relative;
-    display:inline-block;
+    display: inline-block;
     align-items: center;
     padding: 0.5rem 2rem;
     color: #172f50;
     text-decoration: none;
-    /* border: 5px solid #93BCC0; */
 }
-.imgProductoA {
-    width:150px;
+.cardA img {
+    width: 150px;
     height: 150px;
-    /* transition: width (2s), height (2s); */
+    transition: width 2s, height 2s;
 }
-
-.imgProductoA img:hover{
-    width: 200px; 
-    height: 200px;
-    /* transform: scale(1.5); */
+.cardA img:hover {
+    width: 160px;
+    height: 160px;
 }
-
 .cardB {
     font-family: 'Advent Pro', sans-serif;
     font-weight: 200;
     position: relative;
-    display:inline-block;
+    display: inline-block;
     padding: 0.5rem 2rem;
     color: #172f50;
     text-decoration: none;
-    /* border: 5px solid #93BCC0; */
 }
-.imgProductoB {
-    width:150px;
+.cardB img {
+    width: 150px;
     height: 150px;
-    align-items: center;
+    transition: width 2s, height 2s;
 }
-
+.cardB img:hover {
+    width: 160px;
+    height: 160px;
+}
 .cardC {
     font-family: 'Advent Pro', sans-serif;
     font-weight: 200;
     position: relative;
-    display:inline-block;
+    display: inline-block;
     padding: 0.5rem 2rem;
     color: #172f50;
     text-decoration: none;
-    /* border: 5px solid #93BCC0; */
 }
-.imgProductoC {
-    width:150px;
+.cardC img {
+    width: 150px;
     height: 150px;
-    align-items: center;
+    transition: width 2s, height 2s;
 }
+.cardC img:hover {
+    width: 160px;
+    height: 160px;
+}
+
+
 
 /* PROBADOR */
 
@@ -398,55 +404,31 @@ ul{
     border:3px double #172f50;
 }
 .noticiaA {
-    font-family: 'Advent Pro', sans-serif;
-    font-weight: 200;
-    margin: 30px 0px 30px;
-    padding: 20px;
-    border:7px double #172f50;
-    box-shadow: 2px 2px 5px #999
-}
-.noticiaA zoomA{
-    width: 250px;
-    height: 300px;
-    transition: width (2s), height (2s);
-}
-.noticiaA zoomA:hover{
-    width: 270px; height: 320px;
+	font-family: 'Advent Pro', sans-serif;
+	font-weight: 200;
+	margin: 30px 0px 30px;
+	padding: 20px;
+	border: 7px double #172f50;
+	box-shadow: 2px 2px 5px #999;
 }
 
 .noticiaB {
-    font-family: 'Advent Pro', sans-serif;
-    font-weight: 200;
-    margin: 30px 0px 30px;
-    padding: 20px;
-    border:7px double #172f50;
-    box-shadow: 2px 2px 5px #999
+	font-family: 'Advent Pro', sans-serif;
+	font-weight: 200;
+	margin: 30px 0px 30px;
+	padding: 20px;
+	border: 7px double #172f50;
+	box-shadow: 2px 2px 5px #999;
 }
-.noticiaB zoomB{
-    width: 250px;
-    height: 300px;
-    transition: width (2s), height (2s);
-}
-.noticiaB zoomB:hover{
-    width: 270px; height: 320px;
+.noticiaC {
+	font-family: 'Advent Pro', sans-serif;
+	font-weight: 200;
+	margin: 30px 0px 30px;
+	padding: 20px;
+	border: 7px double #172f50;
+	box-shadow: 2px 2px 5px #999;
 }
 
-.noticiaC {
-    font-family: 'Advent Pro', sans-serif;
-    font-weight: 200;
-    margin: 30px 0px 30px;
-    padding: 20px;
-    border:7px double #172f50;
-    box-shadow: 2px 2px 5px #999
-}
-.noticiaC zoomC{
-    width: 250px;
-    height: 300px;
-    transition: width (2s), height (2s);
-}
-.noticiaC zoomC:hover{
-    width: 270px; height: 320px;
-}
 /* GINGKO FLORANTE */
 
 .gingkoSubir{

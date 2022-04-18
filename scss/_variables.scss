@@ -1,25 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
-    font-size: 62,5%;
+html {
+    font-size: 62, 5%;
     font-family: 'Advent Pro', sans-serif;
 }
 
-body{
+body {
     background-image: url("../multimedia/lightpaperfibers.png");
     font-family: 'Advent Pro', sans-serif;
     background-repeat: repeat;
     color: #172f50
 }
-ul{
-    list-style-type:none;
+
+ul {
+    list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: #386B6E;
 }
@@ -28,7 +29,7 @@ a:hover {
     color: #E5533A;
 }
 
-ul{
+ul {
     font-weight: 500;
 }
 
@@ -40,38 +41,64 @@ $colorFondoMenu:#F7EEE8;
 $letraMenu: 20px;
 
 /* MAPS */
+$redesContainer: (facebook: #3a5795,
+    instagram: #833AB4,
+    twitter: #55acee,
+    pinterest: #c8232c);
 
+@each $red, $color in $redesContainer {
+    .#{$red} {
+        background-color: $color;
+    }
+}
 
+/* MAPS GET*/
+$estilos: (
+   color: #F7EEE8,
+   tFuente: 18px,
+   transition: .2s,
+   borde: 3rem
+ );
 
+ .redesContainer {
+     color: map-get($estilos , color);
+     font-size: map-get($estilos , tFuente);
+     transition: map-get($estilos , transition);
+     border-radius: map-get($estilos , borde);
+}
 
 
 /* MIXINS */
 
 @mixin fontStyle ($color, $fontSize) {
-    color:$color;
+    color: $color;
     font-size: $fontSize;
-    font-family: 'Advent Pro', sans-serif; 
+    font-family: 'Advent Pro', sans-serif;
 }
 
 .nosotrosParrafo {
     @include fontStyle(#172f50, 20px);
 }
-.ruta {
+
+.breadcrumb {
     margin: 10px 10px 10px 30px;
     padding: 20px;
-    .h5{
-    @include fontStyle(#172f50, 23px);
-    }}
+
+    .breadcrumb-item {
+        @include fontStyle(#172f50, 23px);
+    }
+}
 
 
-    /* EXTEND --> Tutora: agregue un "extend prueba" porque no encontre a que aplicarlo en mi proyexto.*/
+/* EXTEND --> Tutora: agregue un "extend prueba" porque no encontre a que aplicarlo en mi proyexto.*/
 
-.clasePrueba{
+.clasePrueba {
     text-align: center;
-    color:#E5533A;
+    color: #E5533A;
     border: 2px;
 }
-.clasePrueba2{
+
+.clasePrueba2 {
     @extend .clasePrueba;
     font-size: 3rem;
 }

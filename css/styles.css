@@ -5,7 +5,7 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62,5%;
+  font-size: 62, 5%;
   font-family: 'Advent Pro', sans-serif; }
 
 body {
@@ -28,16 +28,35 @@ ul {
   font-weight: 500; }
 
 /* MAPS */
+.facebook {
+  background-color: #3a5795; }
+
+.instagram {
+  background-color: #833AB4; }
+
+.twitter {
+  background-color: #55acee; }
+
+.pinterest {
+  background-color: #c8232c; }
+
+/* MAPS GET*/
+.redesContainer {
+  color: #F7EEE8;
+  font-size: 18px;
+  transition: 0.2s;
+  border-radius: 3rem; }
+
 /* MIXINS */
 .nosotrosParrafo {
   color: #172f50;
   font-size: 20px;
   font-family: 'Advent Pro', sans-serif; }
 
-.ruta {
+.breadcrumb {
   margin: 10px 10px 10px 30px;
   padding: 20px; }
-  .ruta .h5 {
+  .breadcrumb .breadcrumb-item {
     color: #172f50;
     font-size: 23px;
     font-family: 'Advent Pro', sans-serif; }
@@ -149,7 +168,7 @@ ul {
   background-image: url("../multimedia/fondogingko.png");
   width: 100vw;
   padding: 30px;
-  height: 390px;
+  height: 420px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly; }
@@ -179,7 +198,8 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 12px; }
   .pañueloA img {
     width: 150px;
     height: 150px;
@@ -192,7 +212,8 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 12px; }
   .pañueloB img {
     width: 150px;
     height: 150px;
@@ -205,7 +226,8 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 12px; }
   .pañueloC img {
     width: 150px;
     height: 150px;
@@ -265,11 +287,13 @@ ul {
   padding: 0.5rem 2rem;
   color: #172f50;
   text-decoration: none; }
-
-.imgProductoA {
-  width: 150px;
-  height: 150px;
-  align-items: center; }
+  .cardA img {
+    width: 150px;
+    height: 150px;
+    transition: width 2s, height 2s; }
+    .cardA img:hover {
+      width: 160px;
+      height: 160px; }
 
 .cardB {
   font-family: 'Advent Pro', sans-serif;
@@ -279,11 +303,13 @@ ul {
   padding: 0.5rem 2rem;
   color: #172f50;
   text-decoration: none; }
-
-.imgProductoB {
-  width: 150px;
-  height: 150px;
-  align-items: center; }
+  .cardB img {
+    width: 150px;
+    height: 150px;
+    transition: width 2s, height 2s; }
+    .cardB img:hover {
+      width: 160px;
+      height: 160px; }
 
 .cardC {
   font-family: 'Advent Pro', sans-serif;
@@ -293,11 +319,13 @@ ul {
   padding: 0.5rem 2rem;
   color: #172f50;
   text-decoration: none; }
-
-.imgProductoC {
-  width: 150px;
-  height: 150px;
-  align-items: center; }
+  .cardC img {
+    width: 150px;
+    height: 150px;
+    transition: width 2s, height 2s; }
+    .cardC img:hover {
+      width: 160px;
+      height: 160px; }
 
 /* PROBADOR */
 .cuerpoProbador {
@@ -336,13 +364,6 @@ ul {
   padding: 20px;
   border: 7px double #172f50;
   box-shadow: 2px 2px 5px #999; }
-  .noticiaA zoomA {
-    width: 250px;
-    height: 300px;
-    transition: width 2s, height 2s; }
-    .noticiaA zoomA:hover {
-      width: 270px;
-      height: 320px; }
 
 .noticiaB {
   font-family: 'Advent Pro', sans-serif;
@@ -351,13 +372,6 @@ ul {
   padding: 20px;
   border: 7px double #172f50;
   box-shadow: 2px 2px 5px #999; }
-  .noticiaB zoomB {
-    width: 250px;
-    height: 300px;
-    transition: width 2s, height 2s; }
-    .noticiaB zoomB:hover {
-      width: 270px;
-      height: 320px; }
 
 .noticiaC {
   font-family: 'Advent Pro', sans-serif;
@@ -366,13 +380,6 @@ ul {
   padding: 20px;
   border: 7px double #172f50;
   box-shadow: 2px 2px 5px #999; }
-  .noticiaC zoomC {
-    width: 250px;
-    height: 300px;
-    transition: width 2s, height 2s; }
-    .noticiaC zoomC:hover {
-      width: 270px;
-      height: 320px; }
 
 /* GINGKO FLORANTE */
 .gingkoSubir {
@@ -428,12 +435,7 @@ ul {
     .redesContainer ul li a {
       display: block;
       padding: 0 10px;
-      background-color: #386B6E;
-      color: #F7EEE8;
-      line-height: 35px;
-      font-size: 18px;
-      transition: .2s;
-      border-radius: 3rem; }
+      line-height: 35px; }
       .redesContainer ul li a:hover {
         transform: translateY(-3px) scale(1.05);
         filter: none; }

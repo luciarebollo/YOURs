@@ -7,6 +7,7 @@
 	justify-content: space-evenly;
 	margin: 20px;
 }
+
 .list-group-item {
 	position: relative;
 	display: block;
@@ -16,6 +17,7 @@
 	background-color: none;
 	border: 2px solid #93BCC0;
 }
+
 .cardA {
 	font-family: 'Advent Pro', sans-serif;
 	font-weight: 200;
@@ -25,12 +27,19 @@
 	padding: 0.5rem 2rem;
 	color: #172f50;
 	text-decoration: none;
+
+	img {
+		width: 150px;
+		height: 150px;
+		transition: width (2s), height (2s);
+
+		&:hover {
+			width: 160px;
+			height: 160px;
+		}
+	}
 }
-.imgProductoA {
-	width: 150px;
-	height: 150px;
-	align-items: center;
-}
+
 
 .cardB {
 	font-family: 'Advent Pro', sans-serif;
@@ -40,12 +49,19 @@
 	padding: 0.5rem 2rem;
 	color: #172f50;
 	text-decoration: none;
+	img {
+		width: 150px;
+		height: 150px;
+		transition: width (2s), height (2s);
+
+		&:hover {
+			width: 160px;
+			height: 160px;
+		}
+	}
 }
-.imgProductoB {
-	width: 150px;
-	height: 150px;
-	align-items: center;
-}
+
+
 .cardC {
 	font-family: 'Advent Pro', sans-serif;
 	font-weight: 200;
@@ -54,9 +70,14 @@
 	padding: 0.5rem 2rem;
 	color: #172f50;
 	text-decoration: none;
-}
-.imgProductoC {
-	width: 150px;
-	height: 150px;
-	align-items: center;
+	img {
+		width: 150px;
+		height: 150px;
+		transition: width (2s), height (2s);
+
+		&:hover {
+			width: 160px;
+			height: 160px;
+		}
+	}
 }

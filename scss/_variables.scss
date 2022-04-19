@@ -89,6 +89,9 @@ $estilos: (
     }
 }
 
+.migaDePan{
+     height: 0%;
+ }
 
 /* EXTEND --> Tutora: agregue un "extend prueba" porque no encontre a que aplicarlo en mi proyexto.*/
 
@@ -102,3 +105,4 @@ $estilos: (
     @extend .clasePrueba;
     font-size: 3rem;
 }
+

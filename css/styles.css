@@ -61,6 +61,9 @@ ul {
     font-size: 23px;
     font-family: 'Advent Pro', sans-serif; }
 
+.migaDePan {
+  height: 0%; }
+
 /* EXTEND --> Tutora: agregue un "extend prueba" porque no encontre a que aplicarlo en mi proyexto.*/
 .clasePrueba, .clasePrueba2 {
   text-align: center;
@@ -237,10 +240,12 @@ ul {
       height: 200px; }
 
 .suscripcion {
-  margin: 20px;
-  padding: 20px;
   display: flex;
-  justify-content: center; }
+  margin: 0 auto;
+  padding: 19px 24px 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .btnPropio {
   background-color: #386B6E;
@@ -249,6 +254,11 @@ ul {
 .form-check-input:checked {
   background-color: #E5533A;
   border-color: #386B6E; }
+
+.bordePropioSuscripcion {
+  border: 3px double #172f50;
+  padding: 25px;
+  border-radius: 8%; }
 
 /* NOSOTROS */
 .nosotros {
@@ -267,7 +277,7 @@ ul {
   padding: 0px;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  margin: 20px; }
+  margin: 20px 20px 60px 20px; }
 
 .list-group-item {
   position: relative;
@@ -380,6 +390,49 @@ ul {
   padding: 20px;
   border: 7px double #172f50;
   box-shadow: 2px 2px 5px #999; }
+
+.registroLogin {
+  display: grid;
+  margin: 20px 0px 60px;
+  justify-content: center;
+  grid-template-columns: 3fr 3fr;
+  grid-template-areas: "crearcuenta iniciarsesion"; }
+
+.crearCuenta {
+  grid-area: crearcuenta; }
+
+.iniciarSesion {
+  grid-area: iniciarsesion; }
+
+.crearCuenta {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; }
+
+.btnPropio {
+  background-color: #386B6E;
+  color: #93BCC0; }
+
+.form-check-input:checked {
+  background-color: #E5533A;
+  border-color: #386B6E; }
+
+.iniciarSesion {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; }
+
+.btnPropio {
+  background-color: #386B6E;
+  color: #93BCC0; }
+
+.form-check-input:checked {
+  background-color: #E5533A;
+  border-color: #386B6E; }
 
 /* GINGKO FLORANTE */
 .gingkoSubir {

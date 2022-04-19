@@ -89,10 +89,12 @@
 	}
 }
 .suscripcion {
-	margin: 20px;
-	padding: 20px;
 	display: flex;
-	justify-content: center;
+    margin: 0 auto;
+    padding: 19px 24px 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .btnPropio {
 	background-color: #386B6E;
@@ -103,4 +105,9 @@
 		background-color: #E5533A;
 		border-color: #386B6E;
 	}
+}
+.bordePropioSuscripcion{
+	border: 3px double #172f50;
+	padding:25px;
+	border-radius: 8%;
 }

@@ -1,0 +1,49 @@
+.registroLogin {
+    display: grid;
+    margin: 20px 0px 60px;
+    justify-content: center;
+    grid-template-columns: 3fr 3fr;
+    grid-template-areas: "crearcuenta iniciarsesion";
+}
+.crearCuenta {
+	grid-area: crearcuenta;
+}
+.iniciarSesion {
+	grid-area: iniciarsesion;
+}
+
+.crearCuenta {
+	margin: 5px;
+	padding: 5px;
+	display: flex;
+    flex-wrap: nowrap;
+	justify-content: center;
+}
+.btnPropio {
+	background-color: #386B6E;
+	color: #93BCC0;
+}
+.form-check-input {
+	&:checked {
+		background-color: #E5533A;
+		border-color: #386B6E;
+	}
+}
+
+.iniciarSesion {
+	margin: 5px;
+	padding: 5px;
+	display: flex;
+    flex-wrap: nowrap;
+	justify-content: center;
+}
+.btnPropio {
+	background-color: #386B6E;
+	color: #93BCC0;
+}
+.form-check-input {
+	&:checked {
+		background-color: #E5533A;
+		border-color: #386B6E;
+	}
+}

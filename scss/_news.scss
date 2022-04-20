@@ -39,3 +39,17 @@
 	border: 7px double #172f50;
 	box-shadow: 2px 2px 5px #999;
 }
+
+.bntDropdown {
+	display: inline-block;
+	background-color: #172f50;
+	color: #F7EEE8;
+	height: 30px;
+	border-radius: 0.5rem;
+	border: 3px double #172f50;
+}
+.dropdown-toggle {
+    color: #F7EEE8;
+    background-color: #172f50;
+    border-color: #172f50;
+}

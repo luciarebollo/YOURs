@@ -40,16 +40,19 @@
 	box-shadow: 2px 2px 5px #999;
 }
 
+.aside-dropdown{
+	display: flex;
+    justify-content: flex-end;
+}
+.aside-label{
+	margin-right: 10px;
+}
 .bntDropdown {
 	display: inline-block;
+	margin-right: 10px;
 	background-color: #172f50;
 	color: #F7EEE8;
 	height: 30px;
 	border-radius: 0.5rem;
 	border: 3px double #172f50;
-}
-.dropdown-toggle {
-    color: #F7EEE8;
-    background-color: #172f50;
-    border-color: #172f50;
 }

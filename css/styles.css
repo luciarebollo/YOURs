@@ -391,18 +391,21 @@ ul {
   border: 7px double #172f50;
   box-shadow: 2px 2px 5px #999; }
 
+.aside-dropdown {
+  display: flex;
+  justify-content: flex-end; }
+
+.aside-label {
+  margin-right: 10px; }
+
 .bntDropdown {
   display: inline-block;
+  margin-right: 10px;
   background-color: #172f50;
   color: #F7EEE8;
   height: 30px;
   border-radius: 0.5rem;
   border: 3px double #172f50; }
-
-.dropdown-toggle {
-  color: #F7EEE8;
-  background-color: #172f50;
-  border-color: #172f50; }
 
 /* REGISTRO */
 .registroLogin {
@@ -414,9 +417,17 @@ ul {
 
 .crearCuenta {
   grid-area: crearcuenta; }
+  @media (min-width: 768px) {
+    .crearCuenta .col-md-6 {
+      flex: 0 0 auto;
+      width: 80%; } }
 
 .iniciarSesion {
   grid-area: iniciarsesion; }
+  @media (min-width: 768px) {
+    .iniciarSesion .col-md-6 {
+      flex: 0 0 auto;
+      width: 80%; } }
 
 .crearCuenta {
   margin: 5px;

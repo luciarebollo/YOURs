@@ -1,30 +1,48 @@
 /* REGISTRO */
 
 .registroLogin {
-    display: grid;
-    margin: 20px 0px 60px;
-    justify-content: center;
-    grid-template-columns: 3fr 3fr;
-    grid-template-areas: "crearcuenta iniciarsesion";
+	display: grid;
+	margin: 20px 0px 60px;
+	justify-content: center;
+	grid-template-columns: 3fr 3fr;
+	grid-template-areas: "crearcuenta iniciarsesion";
 }
+
 .crearCuenta {
 	grid-area: crearcuenta;
+	
+	.col-md-6 {
+		@media (min-width: 768px) {
+			flex: 0 0 auto;
+			width: 80%;
+		}
+	}
 }
+
 .iniciarSesion {
 	grid-area: iniciarsesion;
+
+	.col-md-6 {
+		@media (min-width: 768px) {
+			flex: 0 0 auto;
+			width: 80%;
+		}
+	}
 }
 
 .crearCuenta {
 	margin: 5px;
 	padding: 5px;
 	display: flex;
-    flex-wrap: nowrap;
+	flex-wrap: nowrap;
 	justify-content: center;
 }
+
 .btnPropio {
 	background-color: #386B6E;
 	color: #93BCC0;
 }
+
 .form-check-input {
 	&:checked {
 		background-color: #E5533A;
@@ -36,13 +54,15 @@
 	margin: 5px;
 	padding: 5px;
 	display: flex;
-    flex-wrap: nowrap;
+	flex-wrap: nowrap;
 	justify-content: center;
 }
+
 .btnPropio {
 	background-color: #386B6E;
 	color: #93BCC0;
 }
+
 .form-check-input {
 	&:checked {
 		background-color: #E5533A;

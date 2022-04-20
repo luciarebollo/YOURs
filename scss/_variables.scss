@@ -41,16 +41,16 @@ $colorFondoMenu:#F7EEE8;
 $letraMenu: 20px;
 
 /* MAPS */
-$redesContainer: (facebook: #3a5795,
-    instagram: #833AB4,
-    twitter: #55acee,
-    pinterest: #c8232c);
+// $redesContainer: (facebook: #3a5795,
+//     instagram: #833AB4,
+//     twitter: #55acee,
+//     pinterest: #c8232c);
 
-@each $red, $color in $redesContainer {
-    .#{$red} {
-        background-color: $color;
-    }
-}
+// @each $red, $color in $redesContainer {
+//     .#{$red} {
+//         background-color: $color;
+//     }
+// }
 
 /* MAPS GET*/
 $estilos: (

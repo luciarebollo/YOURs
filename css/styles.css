@@ -28,18 +28,6 @@ ul {
   font-weight: 500; }
 
 /* MAPS */
-.facebook {
-  background-color: #3a5795; }
-
-.instagram {
-  background-color: #833AB4; }
-
-.twitter {
-  background-color: #55acee; }
-
-.pinterest {
-  background-color: #c8232c; }
-
 /* MAPS GET*/
 .redesContainer {
   color: #F7EEE8;
@@ -513,7 +501,12 @@ ul {
     .redesContainer ul li a {
       display: block;
       padding: 0 10px;
-      line-height: 35px; }
+      line-height: 35px;
+      background-color: #386B6E;
+      color: #F7EEE8;
+      font-size: 18px;
+      transition: .2s;
+      border-radius: 3rem; }
       .redesContainer ul li a:hover {
         transform: translateY(-3px) scale(1.05);
         filter: none; }

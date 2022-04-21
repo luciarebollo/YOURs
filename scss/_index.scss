@@ -25,15 +25,7 @@
 	grid-template-rows: 0.5fr, 0.5fr, 0.5fr;
 	grid-template-areas: "pañueloA pañueloB pañueloC";
 }
-.panuelaA {
-	grid-area: pañueloA;
-}
-.panuelaB {
-	grid-area: pañueloB;
-}
-.panuelaC {
-	grid-area: pañueloC;
-}
+
 .btnPanuelo {
 	background-color: #E5533A;
 	color: #F7EEE8;
@@ -41,14 +33,15 @@
 	border-radius: 3rem;
 }
 .pañueloA {
+	grid-area: pañueloA;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: 12px;
 	img {
-		width: 150px;
-		height: 150px;
+		width: 180px;
+		height: 180px;
 		transition: width (2s), height (2s);
 		&:hover {
 			width: 200px;
@@ -57,14 +50,15 @@
 	}
 }
 .pañueloB {
+	grid-area: pañueloB;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: 12px;
 	img {
-		width: 150px;
-		height: 150px;
+		width: 180px;
+		height: 180px;
 		transition: width (2s), height (2s);
 		&:hover {
 			width: 200px;
@@ -73,14 +67,15 @@
 	}
 }
 .pañueloC {
+	grid-area: pañueloC;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: 12px;
 	img {
-		width: 150px;
-		height: 150px;
+		width: 180px;
+		height: 180px;
 		transition: width (2s), height (2s);
 		&:hover {
 			width: 200px;
@@ -90,24 +85,53 @@
 }
 .suscripcion {
 	display: flex;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 19px 24px 15px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.btnPropio {
+.btnSuscribirse{
 	background-color: #386B6E;
 	color: #93BCC0;
+	display: inline-block;
+	position: relative;
+	width: auto;
+    position: relative;
+    text-align: center;
 }
-.form-check-input {
-	&:checked {
-		background-color: #E5533A;
-		border-color: #386B6E;
-	}
+.actionSuscripcion {
+    width: auto;
+    position: relative;
+    text-align: center;
 }
+
+.titulo1 {
+	margin: 0px 5px 15px;
+	width: auto;
+    position: relative;
+    text-align: center;
+}
+.titulo2 {
+	@extend .titulo1;
+}
+
 .bordePropioSuscripcion{
 	border: 3px double #172f50;
-	padding:25px;
-	border-radius: 8%;
+	padding:12px;
+	border-radius: 50px;
+}
+
+.form1 {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.form2{
+    @extend .form1;
+}
+
+.form-label{
+    padding-right: 0;
 }

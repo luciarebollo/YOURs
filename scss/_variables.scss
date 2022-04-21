@@ -95,14 +95,14 @@ $estilos: (
 
 /* EXTEND --> Tutora: agregue un "extend prueba" porque no encontre a que aplicarlo en mi proyexto.*/
 
-.clasePrueba {
-    text-align: center;
-    color: #E5533A;
-    border: 2px;
-}
+// .clasePrueba {
+//     text-align: center;
+//     color: #E5533A;
+//     border: 2px;
+// }
 
-.clasePrueba2 {
-    @extend .clasePrueba;
-    font-size: 3rem;
-}
+// .clasePrueba2 {
+//     @extend .clasePrueba;
+//     font-size: 3rem;
+// }
 

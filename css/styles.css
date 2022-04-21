@@ -53,14 +53,6 @@ ul {
   height: 0%; }
 
 /* EXTEND --> Tutora: agregue un "extend prueba" porque no encontre a que aplicarlo en mi proyexto.*/
-.clasePrueba, .clasePrueba2 {
-  text-align: center;
-  color: #E5533A;
-  border: 2px; }
-
-.clasePrueba2 {
-  font-size: 3rem; }
-
 /* MENU */
 .header-container {
   width: fit-content;
@@ -170,15 +162,6 @@ ul {
   grid-template-rows: 0.5fr, 0.5fr, 0.5fr;
   grid-template-areas: "pañueloA pañueloB pañueloC"; }
 
-.panuelaA {
-  grid-area: pañueloA; }
-
-.panuelaB {
-  grid-area: pañueloB; }
-
-.panuelaC {
-  grid-area: pañueloC; }
-
 .btnPanuelo {
   background-color: #E5533A;
   color: #F7EEE8;
@@ -186,42 +169,45 @@ ul {
   border-radius: 3rem; }
 
 .pañueloA {
+  grid-area: pañueloA;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 12px; }
   .pañueloA img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     transition: width 2s, height 2s; }
     .pañueloA img:hover {
       width: 200px;
       height: 200px; }
 
 .pañueloB {
+  grid-area: pañueloB;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 12px; }
   .pañueloB img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     transition: width 2s, height 2s; }
     .pañueloB img:hover {
       width: 200px;
       height: 200px; }
 
 .pañueloC {
+  grid-area: pañueloC;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 12px; }
   .pañueloC img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     transition: width 2s, height 2s; }
     .pañueloC img:hover {
       width: 200px;
@@ -229,24 +215,44 @@ ul {
 
 .suscripcion {
   display: flex;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 19px 24px 15px;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
 
-.btnPropio {
+.btnSuscribirse {
   background-color: #386B6E;
-  color: #93BCC0; }
+  color: #93BCC0;
+  display: inline-block;
+  position: relative;
+  width: auto;
+  position: relative;
+  text-align: center; }
 
-.form-check-input:checked {
-  background-color: #E5533A;
-  border-color: #386B6E; }
+.actionSuscripcion {
+  width: auto;
+  position: relative;
+  text-align: center; }
+
+.titulo1, .titulo2 {
+  margin: 0px 5px 15px;
+  width: auto;
+  position: relative;
+  text-align: center; }
 
 .bordePropioSuscripcion {
   border: 3px double #172f50;
-  padding: 25px;
-  border-radius: 8%; }
+  padding: 12px;
+  border-radius: 50px; }
+
+.form1, .form2 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; }
+
+.form-label {
+  padding-right: 0; }
 
 /* NOSOTROS */
 .nosotros {

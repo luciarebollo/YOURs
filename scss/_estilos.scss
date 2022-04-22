@@ -27,6 +27,7 @@
 	padding: 0.5rem 2rem;
 	color: #172f50;
 	text-decoration: none;
+	gap: 10px;
 
 	img {
 		width: 150px;
@@ -40,6 +41,10 @@
 	}
 }
 
+.card-img-estilo {
+	display: flex;
+	justify-content: center;
+}
 
 .cardB {
 	font-family: 'Advent Pro', sans-serif;
@@ -49,6 +54,7 @@
 	padding: 0.5rem 2rem;
 	color: #172f50;
 	text-decoration: none;
+
 	img {
 		width: 150px;
 		height: 150px;
@@ -70,6 +76,7 @@
 	padding: 0.5rem 2rem;
 	color: #172f50;
 	text-decoration: none;
+
 	img {
 		width: 150px;
 		height: 150px;
@@ -80,4 +87,11 @@
 			height: 160px;
 		}
 	}
+}
+
+.bnt-card-body{
+	margin: 10px;
+	font-size: 18px;
+	font-style: italic;
+	text-transform: uppercase;
 }

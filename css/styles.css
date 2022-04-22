@@ -249,7 +249,8 @@ ul {
 .form1, .form2 {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center; }
+  justify-content: center;
+  line-height: 18px; }
 
 .form-label {
   padding-right: 0; }
@@ -259,8 +260,10 @@ ul {
   padding: 10px 50px; }
 
 .nosotrosParrafo {
-  padding: 10px;
-  font-size: 20px; }
+  margin: auto;
+  padding: 0px 120px 0px;
+  font-size: 22px;
+  text-align: center; }
 
 .moodboard {
   width: 100%; }
@@ -290,7 +293,8 @@ ul {
   align-items: center;
   padding: 0.5rem 2rem;
   color: #172f50;
-  text-decoration: none; }
+  text-decoration: none;
+  gap: 10px; }
   .cardA img {
     width: 150px;
     height: 150px;
@@ -298,6 +302,10 @@ ul {
     .cardA img:hover {
       width: 160px;
       height: 160px; }
+
+.card-img-estilo {
+  display: flex;
+  justify-content: center; }
 
 .cardB {
   font-family: 'Advent Pro', sans-serif;
@@ -331,23 +339,39 @@ ul {
       width: 160px;
       height: 160px; }
 
+.bnt-card-body {
+  margin: 10px;
+  font-size: 18px;
+  font-style: italic;
+  text-transform: uppercase; }
+
 /* PROBADOR */
 .cuerpoProbador {
   margin: 20px 20px 60px 20px;
-  padding: 20px; }
+  padding: 20px;
+  font-size: 18px;
+  text-align: justify; }
 
 .preguntasProbador {
   margin: 20px;
-  padding: 20px; }
+  padding: 20px;
+  font-size: 40px;
+  text-align: justify; }
 
 .imgProbador {
-  height: 300px;
+  height: 270px;
   margin: 10px; }
 
 .accordion-button:not(.collapsed) {
   color: #386B6E;
   background-color: #93BCC0;
-  box-shadow: inset 0 -1px 0 grey; }
+  box-shadow: inset 0 -1px 0 grey;
+  font-size: 18px;
+  text-transform: uppercase; }
+
+.card-img-probador {
+  display: flex;
+  justify-content: center; }
 
 /* NEWS */
 .noticias-container {

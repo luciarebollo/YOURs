@@ -41,11 +41,6 @@
 	}
 }
 
-.card-img-estilo {
-	display: flex;
-	justify-content: center;
-}
-
 .cardB {
 	font-family: 'Advent Pro', sans-serif;
 	font-weight: 200;
@@ -89,9 +84,32 @@
 	}
 }
 
-.bnt-card-body{
-	margin: 10px;
-	font-size: 18px;
+.bnt-card-body {
+	margin: 20px;
+	font-size: 16px;
 	font-style: italic;
-	text-transform: uppercase;
+	// text-transform: uppercase;
+}
+
+.card-img-estilo {
+	display: flex;
+	justify-content: center;
+}
+
+// .card-link {
+// 	background-color: #386B6E;
+// 	color: #93BCC0;
+// 	display: inline-block;
+// 	position: relative;
+// 	width: auto;
+// 	position: relative;
+// 	text-align: center;
+// }
+
+.card-link-estilo{
+	background-color: #172f50;
+	color: #F7EEE8;
+	border-radius: 2rem;
+	border: 6px double #172f50;
+	margin-left: 22px;
 }

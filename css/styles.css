@@ -255,6 +255,10 @@ ul {
 .form-label {
   padding-right: 0; }
 
+.datoSuscripcion {
+  margin-left: 15px;
+  margin-right: 10px; }
+
 /* NOSOTROS */
 .nosotros {
   padding: 10px 50px; }
@@ -303,10 +307,6 @@ ul {
       width: 160px;
       height: 160px; }
 
-.card-img-estilo {
-  display: flex;
-  justify-content: center; }
-
 .cardB {
   font-family: 'Advent Pro', sans-serif;
   font-weight: 200;
@@ -340,10 +340,20 @@ ul {
       height: 160px; }
 
 .bnt-card-body {
-  margin: 10px;
-  font-size: 18px;
-  font-style: italic;
-  text-transform: uppercase; }
+  margin: 20px;
+  font-size: 16px;
+  font-style: italic; }
+
+.card-img-estilo {
+  display: flex;
+  justify-content: center; }
+
+.card-link-estilo {
+  background-color: #172f50;
+  color: #F7EEE8;
+  border-radius: 2rem;
+  border: 6px double #172f50;
+  margin-left: 22px; }
 
 /* PROBADOR */
 .cuerpoProbador {
@@ -417,6 +427,15 @@ ul {
   margin-right: 10px; }
 
 .bntDropdown {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #172f50;
+  color: #F7EEE8;
+  height: 30px;
+  border-radius: 0.5rem;
+  border: 3px double #172f50; }
+
+.dropdown-item {
   display: inline-block;
   margin-right: 10px;
   background-color: #172f50;

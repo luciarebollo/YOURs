@@ -15,8 +15,7 @@
 }
 
 .imgProbador{
-    height: 270px;
-    margin: 10px;
+    height: 325px;
 }
 
 .accordion-button:not(.collapsed) {
@@ -30,4 +29,9 @@
 .card-img-probador{
 	display: flex;
 	justify-content: center;
+    margin: 35px 5px 5px 5px;
+}
+
+.accordion-flush{
+    margin: 30px 20px;
 }

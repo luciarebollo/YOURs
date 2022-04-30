@@ -10,7 +10,8 @@
 }
 
 .bordePropio {
-	border: 3px double #172f50;
+	border: 1px double #93BCC0;
+    border-radius: 10px;
 }
 
 .noticiaA {
@@ -18,7 +19,7 @@
 	font-weight: 200;
 	margin: 30px 0px 30px;
 	padding: 20px;
-	border: 7px double #172f50;
+	border: 5px double #93BCC0;
 	box-shadow: 2px 2px 5px #999;
 }
 
@@ -27,7 +28,7 @@
 	font-weight: 200;
 	margin: 30px 0px 30px;
 	padding: 20px;
-	border: 7px double #172f50;
+	border: 5px double #93BCC0;
 	box-shadow: 2px 2px 5px #999;
 }
 
@@ -36,7 +37,7 @@
 	font-weight: 200;
 	margin: 30px 0px 30px;
 	padding: 20px;
-	border: 7px double #172f50;
+	border: 5px double #93BCC0;
 	box-shadow: 2px 2px 5px #999;
 }
 
@@ -54,7 +55,7 @@
 	color: #F7EEE8;
 	height: 30px;
 	border-radius: 0.5rem;
-	border: 3px double #172f50;
+	border: 3px #172f50;
 }
 
 .dropdown-item{
@@ -65,4 +66,25 @@
 	height: 30px;
 	border-radius: 0.5rem;
 	border: 3px double #172f50;
+}
+
+.actionPreSig {
+    width: auto;
+    position: relative;
+    text-align: center;
+	display: flex;
+    justify-content: center;
+	margin: 20px;
+}
+
+.btnPreSig{
+	background-color: #93BCC0;
+	color: #E5533A;
+	display: inline-block;
+	position: relative;
+	width: auto;
+    position: relative;
+    text-align: center;
+	border-radius: 1rem;
+	margin: 10px;
 }

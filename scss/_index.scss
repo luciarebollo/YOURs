@@ -85,7 +85,7 @@
 }
 .suscripcion {
 	display: flex;
-    margin: 10px auto;
+    margin: 20px auto;
     padding: 19px 24px 15px;
     flex-direction: column;
     justify-content: center;
@@ -99,6 +99,7 @@
 	width: auto;
     position: relative;
     text-align: center;
+	border-radius: 1rem;
 }
 .actionSuscripcion {
     width: auto;

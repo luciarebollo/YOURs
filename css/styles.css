@@ -215,7 +215,7 @@ ul {
 
 .suscripcion {
   display: flex;
-  margin: 10px auto;
+  margin: 20px auto;
   padding: 19px 24px 15px;
   flex-direction: column;
   justify-content: center;
@@ -228,7 +228,8 @@ ul {
   position: relative;
   width: auto;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  border-radius: 1rem; }
 
 .actionSuscripcion {
   width: auto;
@@ -295,49 +296,49 @@ ul {
   position: relative;
   display: inline-block;
   align-items: center;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   color: #172f50;
   text-decoration: none;
   gap: 10px; }
   .cardA img {
-    width: 150px;
-    height: 150px;
+    width: 2000px;
+    height: 200px;
     transition: width 2s, height 2s; }
     .cardA img:hover {
-      width: 160px;
-      height: 160px; }
+      width: 210px;
+      height: 210px; }
 
 .cardB {
   font-family: 'Advent Pro', sans-serif;
   font-weight: 200;
   position: relative;
   display: inline-block;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   color: #172f50;
   text-decoration: none; }
   .cardB img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     transition: width 2s, height 2s; }
     .cardB img:hover {
-      width: 160px;
-      height: 160px; }
+      width: 210px;
+      height: 210px; }
 
 .cardC {
   font-family: 'Advent Pro', sans-serif;
   font-weight: 200;
   position: relative;
   display: inline-block;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   color: #172f50;
   text-decoration: none; }
   .cardC img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     transition: width 2s, height 2s; }
     .cardC img:hover {
-      width: 160px;
-      height: 160px; }
+      width: 210px;
+      height: 210px; }
 
 .bnt-card-body {
   margin: 20px;
@@ -351,9 +352,28 @@ ul {
 .card-link-estilo {
   background-color: #172f50;
   color: #F7EEE8;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   border: 6px double #172f50;
   margin-left: 22px; }
+
+.actionPreSig {
+  width: auto;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 20px; }
+
+.btnPreSig {
+  background-color: #93BCC0;
+  color: #E5533A;
+  display: inline-block;
+  position: relative;
+  width: auto;
+  position: relative;
+  text-align: center;
+  border-radius: 1rem;
+  margin: 10px; }
 
 /* PROBADOR */
 .cuerpoProbador {
@@ -369,8 +389,7 @@ ul {
   text-align: justify; }
 
 .imgProbador {
-  height: 270px;
-  margin: 10px; }
+  height: 325px; }
 
 .accordion-button:not(.collapsed) {
   color: #386B6E;
@@ -381,7 +400,11 @@ ul {
 
 .card-img-probador {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin: 35px 5px 5px 5px; }
+
+.accordion-flush {
+  margin: 30px 20px; }
 
 /* NEWS */
 .noticias-container {
@@ -393,14 +416,15 @@ ul {
   margin: 20px; }
 
 .bordePropio {
-  border: 3px double #172f50; }
+  border: 1px double #93BCC0;
+  border-radius: 10px; }
 
 .noticiaA {
   font-family: 'Advent Pro', sans-serif;
   font-weight: 200;
   margin: 30px 0px 30px;
   padding: 20px;
-  border: 7px double #172f50;
+  border: 5px double #93BCC0;
   box-shadow: 2px 2px 5px #999; }
 
 .noticiaB {
@@ -408,7 +432,7 @@ ul {
   font-weight: 200;
   margin: 30px 0px 30px;
   padding: 20px;
-  border: 7px double #172f50;
+  border: 5px double #93BCC0;
   box-shadow: 2px 2px 5px #999; }
 
 .noticiaC {
@@ -416,7 +440,7 @@ ul {
   font-weight: 200;
   margin: 30px 0px 30px;
   padding: 20px;
-  border: 7px double #172f50;
+  border: 5px double #93BCC0;
   box-shadow: 2px 2px 5px #999; }
 
 .aside-dropdown {
@@ -433,7 +457,7 @@ ul {
   color: #F7EEE8;
   height: 30px;
   border-radius: 0.5rem;
-  border: 3px double #172f50; }
+  border: 3px #172f50; }
 
 .dropdown-item {
   display: inline-block;
@@ -443,6 +467,25 @@ ul {
   height: 30px;
   border-radius: 0.5rem;
   border: 3px double #172f50; }
+
+.actionPreSig {
+  width: auto;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 20px; }
+
+.btnPreSig {
+  background-color: #93BCC0;
+  color: #E5533A;
+  display: inline-block;
+  position: relative;
+  width: auto;
+  position: relative;
+  text-align: center;
+  border-radius: 1rem;
+  margin: 10px; }
 
 /* REGISTRO */
 .registroLogin {
@@ -475,7 +518,8 @@ ul {
 
 .btnPropio {
   background-color: #386B6E;
-  color: #93BCC0; }
+  color: #93BCC0;
+  border-radius: 1rem; }
 
 .form-check-input:checked {
   background-color: #E5533A;
@@ -511,8 +555,8 @@ ul {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.3fr 0.3fr;
   grid-template-areas: "tiendaonline laempresa";
-  margin: 0px;
-  padding: 30px 50px;
+  margin: 10px auto;
+  padding: 35px 45px;
   background-color: #172f50;
   color: #93BCC0;
   display: flex;

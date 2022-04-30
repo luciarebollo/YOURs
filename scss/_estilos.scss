@@ -24,19 +24,19 @@
 	position: relative;
 	display: inline-block;
 	align-items: center;
-	padding: 0.5rem 2rem;
+	padding: 1rem 2rem;
 	color: #172f50;
 	text-decoration: none;
 	gap: 10px;
 
 	img {
-		width: 150px;
-		height: 150px;
+		width: 2000px;
+		height: 200px;
 		transition: width (2s), height (2s);
 
 		&:hover {
-			width: 160px;
-			height: 160px;
+			width: 210px;
+			height: 210px;
 		}
 	}
 }
@@ -46,18 +46,18 @@
 	font-weight: 200;
 	position: relative;
 	display: inline-block;
-	padding: 0.5rem 2rem;
+	padding: 1rem 2rem;
 	color: #172f50;
 	text-decoration: none;
 
 	img {
-		width: 150px;
-		height: 150px;
+		width: 200px;
+		height: 200px;
 		transition: width (2s), height (2s);
 
 		&:hover {
-			width: 160px;
-			height: 160px;
+			width: 210px;
+			height: 210px;
 		}
 	}
 }
@@ -68,18 +68,18 @@
 	font-weight: 200;
 	position: relative;
 	display: inline-block;
-	padding: 0.5rem 2rem;
+	padding: 1rem 2rem;
 	color: #172f50;
 	text-decoration: none;
 
 	img {
-		width: 150px;
-		height: 150px;
+		width: 200px;
+		height: 200px;
 		transition: width (2s), height (2s);
 
 		&:hover {
-			width: 160px;
-			height: 160px;
+			width: 210px;
+			height: 210px;
 		}
 	}
 }
@@ -96,20 +96,31 @@
 	justify-content: center;
 }
 
-// .card-link {
-// 	background-color: #386B6E;
-// 	color: #93BCC0;
-// 	display: inline-block;
-// 	position: relative;
-// 	width: auto;
-// 	position: relative;
-// 	text-align: center;
-// }
-
 .card-link-estilo{
 	background-color: #172f50;
 	color: #F7EEE8;
-	border-radius: 2rem;
+	border-radius: 1.5rem;
 	border: 6px double #172f50;
 	margin-left: 22px;
+}
+
+.actionPreSig {
+    width: auto;
+    position: relative;
+    text-align: center;
+	display: flex;
+    justify-content: center;
+	margin: 20px;
+}
+
+.btnPreSig{
+	background-color: #93BCC0;
+	color: #E5533A;
+	display: inline-block;
+	position: relative;
+	width: auto;
+    position: relative;
+    text-align: center;
+	border-radius: 1rem;
+	margin: 10px;
 }

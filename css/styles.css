@@ -266,8 +266,8 @@ ul {
 
 .nosotrosParrafo {
   margin: auto;
-  padding: 0px 120px 0px;
-  font-size: 22px;
+  padding: 0px 60px 0px;
+  font-size: 24px;
   text-align: center; }
 
 .moodboard {
@@ -301,7 +301,7 @@ ul {
   text-decoration: none;
   gap: 10px; }
   .cardA img {
-    width: 2000px;
+    width: 200px;
     height: 200px;
     transition: width 2s, height 2s; }
     .cardA img:hover {
@@ -342,8 +342,8 @@ ul {
 
 .bnt-card-body {
   margin: 20px;
-  font-size: 16px;
-  font-style: italic; }
+  font-size: 14px;
+  text-transform: uppercase; }
 
 .card-img-estilo {
   display: flex;
@@ -489,6 +489,9 @@ ul {
 
 /* REGISTRO */
 .registroLogin {
+  background-image: url("../multimedia/anatano.png");
+  max-width: 100%;
+  background-size: cover;
   display: grid;
   margin: 20px 0px 60px;
   justify-content: center;
